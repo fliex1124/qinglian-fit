@@ -51,7 +51,7 @@
  go('ai');assert(document.getElementById('chatInput').disabled,'DOM: AI disabled by default');
  for(let day=0;day<4;day++){
   st.selected='starter';progress().index=day;progress().choice=false;progress().restDate=null;go('workout');
-  assert(document.querySelectorAll('.exercise-card').length===[6,6,4,3][day],'DOM: day '+(day+1)+' exercise count');
+  assert(document.querySelectorAll('.exercise-card').length===[6,6,4,4][day],'DOM: day '+(day+1)+' exercise count');
   assert(!document.querySelector('[data-record]'),'DOM: day '+(day+1)+' no set inputs');
   const images=[...document.querySelectorAll('[data-exercise-image]')];
   await Promise.all(images.map(img=>{img.loading='eager';return img.decode().catch(e=>{throw Error('Image failed: '+img.getAttribute('src')+' '+e.message)})}));

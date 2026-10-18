@@ -10,7 +10,7 @@ $fitMain=Join-Path $fitAndroidRoot 'app/src/main'
 $fitBuild=Join-Path $fitAndroidRoot 'build'
 $fitDist=Join-Path $fitProject 'dist'
 $fitSigning=Join-Path $fitAndroidRoot 'signing'
-$fitApk=Join-Path $fitDist 'qinglian-fit-0.7.0.apk'
+$fitApk=Join-Path $fitDist 'qinglian-fit-0.7.2.apk'
 foreach($fitRequired in @($fitJdk,$fitTools,$fitPlatform)){if(-not(Test-Path -LiteralPath $fitRequired)){throw "Missing Android toolchain: $fitRequired"}}
 $env:JAVA_HOME=$fitJdk
 $env:PATH=(Join-Path $fitJdk 'bin')+';'+$env:PATH

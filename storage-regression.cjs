@@ -7,10 +7,10 @@ const assert = require('node:assert/strict');
 const KEY = 'qinglian_fit_v01';
 const SOURCES = ['app.js', 'exercise-guides.js', 'training-details.js', 'food-database.js', 'nutrition.js', 'enhancements.js'];
 
-function harness(initialRaw = null) {
+function harness(initialRaw = null, options = {}) {
   const values = new Map(initialRaw == null ? [] : [[KEY, initialRaw]]);
   const nodes = new Map(), listeners = {}, writes = [], mirrors = [];
-  let now = '2026-10-17T10:00:00+08:00', capacity = Infinity, writeFailure = false, consent = true;
+  let now = '2026-10-17T10:00:00+08:00', capacity = Infinity, writeFailure = options.failWrites === true, consent = true;
   class TestDate extends Date {
     constructor(...args) { super(...(args.length ? args : [now])); }
     static now() { return new Date(now).getTime(); }
@@ -237,6 +237,92 @@ async function test(name, check) { await check(); passed++; console.log('PASS', 
     assert.doesNotThrow(() => h.run('save()'));
     assert.match(h.run('ai()'), /http:\/\/127\.0\.0\.1:9876/);
     assert.doesNotMatch(h.run('ai()'), /127\.0\.0\.1:8787/);
+  });
+
+
+  function legacyAbsState() {
+    const source = harness(), state = source.packet().state;
+    state.plans[0].days[3].exercises.pop();
+    const session = {checks:{0:[true,false]},inputs:{0:[{kg:'25',reps:'10'}]},cardio:12,
+      exerciseChecks:{0:true,2:true},id:'abs-draft',started:true,paused:false,
+      cardioClock:{elapsedMs:120000,runningSince:null,recorded:false}};
+    state.progress.starter = {index:3,choice:false,restDate:null,session};
+    const custom = structuredClone(state.plans[0]);custom.id='custom-old';custom.system=false;custom.name='旧自定义副本';
+    state.plans.push(custom);state.progress[custom.id]={index:1,choice:false,restDate:null,session:{checks:{},inputs:{},cardio:''}};
+    state.history=[{id:'abs-old',date:'2026-10-15',type:'done',planId:'starter',name:'腹部',dayIndex:3,
+      done:2,total:3,completionMode:'exercise',exerciseChecks:[true,false,true],cardio:12,
+      snapshot:structuredClone(state.plans[0].days[3]),before:structuredClone(state.progress.starter),
+      checks:structuredClone(session.checks),inputs:structuredClone(session.inputs)}];
+    state.archivedSessions=[{planId:'starter',plan:structuredClone(state.plans[0]),progress:structuredClone(state.progress.starter)}];
+    return state;
+  }
+
+  await test('old abs system template appends the fourth action without changing progress, history, custom plans or archives', () => {
+    const old=legacyAbsState(),h=harness(JSON.stringify(old));
+    assert.equal(h.run('st.plans[0].days[3].exercises.length'),4);
+    assert.equal(h.run('st.plans[0].days[3].exercises[3][0]'),'跪姿绳索卷腹');
+    const expected=structuredClone(old);expected.plans[0].days[3].exercises.push(h.plain('DAYPLAN[3].exercises[3]'));
+    assert.deepEqual(h.plain('st'),expected);
+    assert.equal(h.run('exerciseIsDone(progress().session,curday().exercises[2],2)'),true);
+    assert.equal(h.run('exerciseIsDone(progress().session,curday().exercises[3],3)'),false);
+    assert.equal(h.writes.length,1);
+  });
+
+  await test('abs migration is idempotent across repeated calls and reloads', () => {
+    const first=harness(JSON.stringify(legacyAbsState()));
+    assert.equal(first.run('migrateStarterAbsPlan(st)'),false);
+    const next=harness(first.values.get(KEY));
+    assert.equal(next.run('st.plans[0].days[3].exercises.length'),4);
+    assert.equal(next.writes.length,0);
+  });
+
+  await test('non-system and modified templates are never overwritten by the abs upgrade', () => {
+    for(const kind of ['custom','modified']) {
+      const old=legacyAbsState();
+      if(kind==='custom')old.plans[0].system=false;
+      else old.plans[0].days[3].exercises[0][0]='我自己的动作';
+      const raw=JSON.stringify(old),h=harness(raw);
+      assert.equal(h.values.get(KEY),raw);assert.deepEqual(h.plain('st'),old);assert.equal(h.writes.length,0);
+    }
+  });
+
+  await test('failed startup migration keeps readable legacy data and can be retried after storage recovers', () => {
+    const old=legacyAbsState(),raw=JSON.stringify(old),h=harness(raw,{failWrites:true});
+    assert.equal(h.run('storageBroken'),false);assert.equal(h.run('starterUpgradeFailed'),true);
+    assert.equal(h.values.get(KEY),raw);assert.deepEqual(h.plain('st'),old);
+    const retry=harness(raw);assert.equal(retry.run('st.plans[0].days[3].exercises.length'),4);
+  });
+
+  await test('restoring an old abs backup upgrades only the system template and leaves caller and historical snapshots untouched', () => {
+    const old=legacyAbsState(),h=harness();
+    const packet={app:'qinglian-fit',version:1,state:old},before=JSON.stringify(packet);
+    h.run(`globalThis.oldAbsCandidate=${JSON.stringify(old)};restorePreparedState(oldAbsCandidate)`);
+    assert.equal(h.run('oldAbsCandidate.plans[0].days[3].exercises.length'),3);
+    assert.equal(h.run('st.plans[0].days[3].exercises.length'),4);
+    assert.equal(h.run('st.plans[1].days[3].exercises.length'),3);
+    assert.equal(h.run('st.history[0].snapshot.exercises.length'),3);
+    assert.deepEqual(h.plain('st.progress'),old.progress);
+    assert.equal(JSON.stringify(packet),before);
+  });
+
+  await test('failed old-backup upgrade leaves current durable data unchanged', () => {
+    const h=harness();h.run('save()');const raw=h.values.get(KEY);
+    const packet={app:'qinglian-fit',version:1,state:legacyAbsState()};
+    h.failWrites(true);assert.throws(()=>h.restore(packet),/写入|存储/);
+    assert.equal(h.values.get(KEY),raw);assert.equal(h.run('JSON.stringify(st)'),raw);
+  });
+
+  await test('new abs action and missed days never advance before explicit check-in, fourth day keeps the cycle choice', () => {
+    const h=harness(JSON.stringify(legacyAbsState()));
+    h.time('2026-10-20T10:00:00+08:00');h.run('home();workout()');
+    assert.equal(h.run('progress().index'),3);assert.equal(h.run('progress().choice'),false);
+    h.run('toggleExercise(1);toggleExercise(3)');
+    assert.equal(h.run('exerciseSummary(curday(),progress().session).done'),4);
+    h.consent(false);h.run('finish()');assert.equal(h.run('st.history.length'),1);assert.equal(h.run('progress().choice'),false);
+    h.consent(true);h.run('finish()');
+    assert.equal(h.run('st.history.length'),2);assert.equal(h.run('progress().choice'),true);
+    assert.equal(h.run('st.history[1].total'),4);assert.equal(h.run('st.history[1].snapshot.exercises[3][0]'),'跪姿绳索卷腹');
+    assert.equal(h.run('st.history[0].snapshot.exercises.length'),3);
   });
 
   console.log(`${passed} storage regression groups passed`);

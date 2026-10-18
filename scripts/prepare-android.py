@@ -19,14 +19,14 @@ def prepare():
             rel=Path(frame['path'])
             if rel.is_absolute() or '..' in rel.parts:raise ValueError('Invalid exercise asset path')
             images.add(rel.as_posix())
-    if len(guides)!=19:raise ValueError('Expected all 19 built-in exercise guides')
+    if len(guides)!=20:raise ValueError('Expected all 20 built-in exercise guides')
     files=sorted(set(STATIC)|images)
     expected=set(files)|{'bundle-manifest.json'}
     STAGE.mkdir(parents=True,exist_ok=True)
     # Refuse unknown files, rather than silently packaging a copied personal directory.
     extras=[p.relative_to(STAGE).as_posix() for p in STAGE.rglob('*') if p.is_file() and p.relative_to(STAGE).as_posix() not in expected]
     if extras:raise ValueError('Unexpected staging files: '+', '.join(extras))
-    manifest={'app':'qinglian-fit','version':'0.7.0','exerciseCount':len(guides),'files':[]}
+    manifest={'app':'qinglian-fit','version':'0.7.2','exerciseCount':len(guides),'files':[]}
     for name in files:
         source=(ROOT/name).resolve()
         if ROOT.resolve() not in source.parents:raise ValueError('Asset escapes project')

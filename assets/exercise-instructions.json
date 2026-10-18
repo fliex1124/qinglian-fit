@@ -1,0 +1,644 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-18",
+  "scope": "现有20个内置动作，原创中文教学整理；反向山羊变式仅依据用户参考图。",
+  "exercises": {
+    "杠铃平板卧推": {
+      "target": "胸大肌为主，肱三头肌和三角肌前束协同。",
+      "setup": [
+        "平躺凳面，头、上背和臀部贴稳，双脚踩实地面。",
+        "双手完整握杠、握距略宽于肩；先用轻重量确认保护杆或保护者就位。"
+      ],
+      "alignment": [
+        "肩胛轻收稳，腰背保留自然曲线，不刻意抬臀顶腰。",
+        "下放时前臂尽量接近竖直，手腕位于肘部上方，上臂不硬张成一字。"
+      ],
+      "execution": [
+        "屈肘缓慢降向胸部，在肩部舒适、可控的位置停止，不强求触胸。",
+        "胸肌和手臂共同推起，杠铃保持稳定，双脚与臀部支撑不变。"
+      ],
+      "breathingTempo": [
+        "下降时吸气，推起时呼气，腹部保持适度支撑。",
+        "下放稍慢，底部停稳再推起，不靠杠铃碰胸反弹。"
+      ],
+      "mistakes": [
+        "避免杠铃砸胸、肩头前滑、折腕，或用抬臀换取推举幅度。",
+        "不要突然猛顶肘部；最后几次失控时减重或请保护者协助。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Barbell Bench Press - Medium Grip",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip.json"
+        },
+        {
+          "title": "ACE · Chest Press",
+          "url": "https://www.acefitness.org/resources/everyone/exercise-library/5/chest-press/"
+        }
+      ]
+    },
+    "上斜哑铃卧推": {
+      "target": "侧重胸大肌上部，肱三头肌与三角肌前束协同。",
+      "setup": [
+        "上斜靠背可参考约30°起步，结合器械档位和肩部舒适度调整。",
+        "头、背和臀部贴凳，双脚踩实，将哑铃稳定送至上胸两侧。"
+      ],
+      "alignment": [
+        "肩胛轻收稳，肋骨不过度上翻；凳面上斜不代表要刻意挺腰。",
+        "前臂尽量竖直、手腕不过度后折，双肘自然斜向下方。"
+      ],
+      "execution": [
+        "两侧同步向肩部上方推起，感受上胸参与，顶端不碰撞哑铃。",
+        "缓慢降向上胸两侧，到肩部舒适且躯干稳定的位置返回。"
+      ],
+      "breathingTempo": [
+        "下放时吸气，推起时呼气，不连续憋气硬顶。",
+        "下降稍慢、底部不反弹；先稳定动作，再增加重量。"
+      ],
+      "mistakes": [
+        "避免把凳面立得很高后仍抬臀顶腰，使动作变成失控肩推。",
+        "避免耸肩、双肘过度外张、两侧速度或下降深度明显不同。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Incline Dumbbell Press",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Press.json"
+        },
+        {
+          "title": "ACE · Incline Chest Press",
+          "url": "https://www.acefitness.org/resources/everyone/exercise-library/25/incline-chest-press/"
+        },
+        {
+          "title": "卧推倾角原始研究",
+          "url": "https://www.mdpi.com/1660-4601/17/19/7339"
+        }
+      ],
+      "note": "30°是起始参考，不是唯一标准角度；器械结构、身体比例和舒适范围会影响设置。"
+    },
+    "器械夹胸（蝴蝶机）": {
+      "target": "胸大肌带动上臂合拢，手臂协助传递力量。",
+      "setup": [
+        "坐稳并让背部贴垫，双脚踩实，选择能缓慢返回的重量。",
+        "调整座椅，使手柄或臂垫与胸部位置相适应，按本机结构握持。"
+      ],
+      "alignment": [
+        "上臂大致接近肩高或略低，肩膀自然放松，不抬肩迎合器械。",
+        "肘部保留自然弯曲，腰背自然，身体不探离靠垫。"
+      ],
+      "execution": [
+        "想象由胸部带动两侧上臂向前合拢，不只用手挤压把手。",
+        "合拢停稳后缓慢打开，到胸部拉伸且肩前舒适的位置即可。"
+      ],
+      "breathingTempo": [
+        "向中间夹拢时呼气，受控打开时吸气。",
+        "回程稍慢，保持控制，避免配重片反复猛烈碰撞。"
+      ],
+      "mistakes": [
+        "避免为追求幅度把手臂强行拉到身后，造成肩前被动牵扯。",
+        "避免耸肩、顶腰或身体前后摇摆；出现借力时先减重。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Butterfly",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Butterfly.json"
+        }
+      ]
+    },
+    "俯卧撑": {
+      "target": "胸肌与肱三头肌负责推起，腹部和臀部稳定身体。",
+      "setup": [
+        "双掌撑地，手距约肩宽或略宽，脚尖支撑，先建立稳定高位支撑。",
+        "无法保持身体一线时，可将双手撑在稳固高台上降低难度。"
+      ],
+      "alignment": [
+        "头、背、髋尽量成一直线，收紧腹部和臀部，不塌腰或撅臀。",
+        "屈肘时上臂沿躯干两侧斜向打开，不向左右硬张成一字。"
+      ],
+      "execution": [
+        "胸部和髋部同步下降，到肩部舒适且能够保持身体稳定的位置。",
+        "想象把地面推远，让胸、髋同步上升，回到稳定支撑。"
+      ],
+      "breathingTempo": [
+        "下降时吸气，推起时呼气，动作中保持连续呼吸。",
+        "下降有控制，底部不停躺地借力，推起不突然甩身。"
+      ],
+      "mistakes": [
+        "避免只伸头凑深度，或先抬胸、再拖着腰起身。",
+        "避免耸肩、肘部过度外张；姿势走样时改用稳固高台版本。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Pushups",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pushups.json"
+        },
+        {
+          "title": "ACE · Push-up",
+          "url": "https://www.acefitness.org/resources/everyone/exercise-library/41/push-up/"
+        }
+      ]
+    },
+    "绳索下压": {
+      "target": "肱三头肌伸肘，肩部与躯干负责稳定。",
+      "setup": [
+        "将绳索接在高位滑轮，双手掌心相对握绳端，双脚踩稳。",
+        "身体直立或轻微前倾，上臂靠近体侧，先选择可控的重量。"
+      ],
+      "alignment": [
+        "腹部适度收紧，肩膀远离耳朵，手腕与前臂基本对齐。",
+        "肘部留在躯干两侧，主要由前臂绕肘移动，上臂不过度摆动。"
+      ],
+      "execution": [
+        "以上臂后侧发力，把绳索压向大腿两侧，末端自然分开绳端。",
+        "到手臂舒适伸直处停稳，再缓慢屈肘返回，保持上臂位置。"
+      ],
+      "breathingTempo": [
+        "向下压时呼气，返回时吸气，保持呼吸自然。",
+        "底部短暂停稳，回程稍慢，不让配重把前臂突然拉走。"
+      ],
+      "mistakes": [
+        "避免靠大幅前倾、压肩、蹬腿或躯干下沉把重量砸下。",
+        "避免向后甩肘、肘部外张或在底部猛顶肘关节。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Triceps Pushdown - Rope Attachment",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown_-_Rope_Attachment.json"
+        }
+      ]
+    },
+    "双杠臂屈伸": {
+      "target": "侧重肱三头肌，胸肌和肩部协同稳定。",
+      "setup": [
+        "握稳双杠建立支撑，先确认能稳定承受体重，手臂舒适伸直。",
+        "双腿自然收拢；起始支撑不稳时先使用合适的辅助器械。"
+      ],
+      "alignment": [
+        "躯干相对直立，肩膀不挤向耳朵，也不含胸把肩头向前顶。",
+        "双肘朝后、靠近体侧，头颈自然，不靠摆腿维持动作。"
+      ],
+      "execution": [
+        "缓慢屈肘下降，肘部接近直角可作为返回参考，肩前不适时更早停止。",
+        "以上臂后侧发力平稳推回支撑位，不猛顶肘部或突然耸肩。"
+      ],
+      "breathingTempo": [
+        "下降时吸气，推起时呼气，保持呼吸连续。",
+        "下降可控、底部不弹震，不用甩腿获得上升惯性。"
+      ],
+      "mistakes": [
+        "不要追求越深越好；肩头前滑、肩前夹痛时停止并减小幅度。",
+        "避免双肘大幅外张、失控坠落或追加过重负重。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Dips - Triceps Version",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dips_-_Triceps_Version.json"
+        },
+        {
+          "title": "ACE · Dangerous Dips",
+          "url": "https://www.acefitness.org/certifiednewsarticle/1657/follow-up-q-and-a-dangerous-dips/"
+        }
+      ]
+    },
+    "辅助引体向上": {
+      "target": "背阔肌与上背为主，肱二头肌协助，躯干维持稳定。",
+      "setup": [
+        "检查长环弹力带、固定点与单杠是否完好，磨损或松动时不用。",
+        "按弹力带厂家方法固定并借稳固踏台进入，避免拉伸的带子突然弹回。"
+      ],
+      "alignment": [
+        "正握、略宽于肩，腹臀适度收紧，头颈自然，身体避免晃动。",
+        "起拉前肩部主动稳定，肘部向身体两侧斜下方移动。"
+      ],
+      "execution": [
+        "想象把肘部拉向体侧，让背部带动身体上升，不靠蹬腿或甩腰。",
+        "在可控范围拉高，再缓慢下放至手臂充分伸展并保持肩部控制。"
+      ],
+      "breathingTempo": [
+        "上拉时呼气，下放时吸气，保持连续自然呼吸。",
+        "下放稍慢；结束时先站稳踏台，再谨慎退出弹力带。"
+      ],
+      "mistakes": [
+        "避免伸长脖子追求下巴过杠、摆腿或甩腰，必要时增加辅助。",
+        "不要把辅助机的公斤数套在弹力带上，两者助力方式不同。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Band Assisted Pull-Up",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Assisted_Pull-Up.json"
+        },
+        {
+          "title": "ACE · Master the Pull-up",
+          "url": "https://www.acefitness.org/resources/pros/expert-articles/5565/4-moves-to-help-you-master-the-pull-up/"
+        },
+        {
+          "title": "THERABAND · 使用前检查",
+          "url": "https://support.performancehealth.com/support/solutions/articles/69000743619-theraband-resistance-band-kits"
+        }
+      ],
+      "note": "图片为弹力带辅助变式。辅助引体机的脚踏、配重及进出方式须按现场器械说明设置。"
+    },
+    "坐姿划船": {
+      "target": "背阔肌、菱形肌和中背为主，肱二头肌辅助。",
+      "setup": [
+        "握把接低位滑轮，坐稳后双脚踩牢脚踏，膝盖自然微屈。",
+        "掌心相对握柄，坐距以伸臂后仍可保持躯干稳定为准。"
+      ],
+      "alignment": [
+        "躯干基本直立，腰背保留自然曲线，收紧腹部，不刻意挺腰。",
+        "肩部自然，手腕与前臂对齐，肘部沿身体两侧运动。"
+      ],
+      "execution": [
+        "用肘部向后带动握把靠近上腹，让肩胛自然向中间靠拢。",
+        "缓慢伸臂回程，允许肩胛自然前移，躯干不随钢索前后摇摆。"
+      ],
+      "breathingTempo": [
+        "拉近时呼气，回放时吸气，腹部维持适度支撑。",
+        "握把靠近身体稍停，感受中背收紧，再受控送回。"
+      ],
+      "mistakes": [
+        "避免大幅后仰借力或弓背探身，躯干反复摆动时先减重。",
+        "避免耸肩、卷腕，或为碰腹部把肘强行拉到身后很远。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Seated Cable Rows",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows.json"
+        }
+      ]
+    },
+    "高位下拉": {
+      "target": "背阔肌为主，上背与肱二头肌协助。",
+      "setup": [
+        "调整压腿垫固定大腿，双脚踩实，身体坐在滑轮下方。",
+        "正握横杆、略宽于肩，先选能保持躯干稳定的重量。"
+      ],
+      "alignment": [
+        "胸口自然抬起，躯干可略后倾，但不要在每次动作中改变后倾角度。",
+        "颈部自然、手腕中立，肘部朝体侧向下移动，不伸头迎杆。"
+      ],
+      "execution": [
+        "想象将肘拉向肋骨，让横杆降至上胸附近，始终在颈前运动。",
+        "在可控范围缓慢回放，双臂伸展，肩胛随手臂自然上移。"
+      ],
+      "breathingTempo": [
+        "下拉时呼气，回放时吸气，不为最后几次持续憋气。",
+        "底部稍停、回程稍慢，不让配重猛落后借反弹启动。"
+      ],
+      "mistakes": [
+        "避免颈后下拉，或大幅后仰把下拉变成划船。",
+        "不必强行让杆碰胸；只能甩身完成时先减重或缩小幅度。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Wide-Grip Lat Pulldown",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Lat_Pulldown.json"
+        },
+        {
+          "title": "Catalyst Athletics · Lat Pulldown",
+          "url": "https://www.catalystathletics.com/exercise/725/Lat-Pulldown/"
+        }
+      ]
+    },
+    "直臂下压": {
+      "target": "背阔肌为主，躯干维持站姿稳定。",
+      "setup": [
+        "横杆接高位滑轮，正握约肩宽，向后退至钢索有张力。",
+        "双脚踩稳、膝盖微屈，髋部稍向后，上身小幅前倾并保持。"
+      ],
+      "alignment": [
+        "腹部收紧、肋骨不过度外翻，腰背自然，不靠挺腰增加幅度。",
+        "肘部轻微弯曲且角度基本不变；肩部不过度耸起。"
+      ],
+      "execution": [
+        "想象用腋下带动手臂，以肩关节为轴把横杆沿弧线压向大腿。",
+        "手靠近大腿即可，随后缓慢回抬至肩部舒适的伸展范围。"
+      ],
+      "breathingTempo": [
+        "向下压时呼气，回抬时吸气，腹部保持稳定。",
+        "底部稍停，回程有控制，不让钢索把手臂突然向上拉走。"
+      ],
+      "mistakes": [
+        "避免反复屈伸肘部，把背部动作做成肱三头肌下压。",
+        "避免蹲身、甩腰或猛锁肘关节；肩前不适时缩小回抬幅度。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Straight-Arm Pulldown",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Straight-Arm_Pulldown.json"
+        },
+        {
+          "title": "ACE · Straight-arm Pull-downs",
+          "url": "https://www.acefitness.org/resources/pros/expert-articles/5565/4-moves-to-help-you-master-the-pull-up/"
+        }
+      ]
+    },
+    "杠铃弯举": {
+      "target": "肱二头肌为主，肱肌和前臂肌群参与。",
+      "setup": [
+        "双脚约髋宽，反握杠铃、握距约肩宽，以手腕舒适为准。",
+        "杠铃自然垂在大腿前方，膝盖微松，收紧腹部，肩部放松。"
+      ],
+      "alignment": [
+        "上臂留在身体两侧附近，手腕与前臂对齐，不向后折腕。",
+        "躯干保持直立、头颈自然，不后仰挺腹帮助抬起重量。"
+      ],
+      "execution": [
+        "屈肘把杠铃举向肩前，感受上臂前侧收紧，上臂尽量稳定。",
+        "受控下降，接近手臂充分伸展处返回，不在底部猛顶肘部。"
+      ],
+      "breathingTempo": [
+        "弯举时呼气，放下时吸气，保持连续呼吸。",
+        "举起平稳、下降稍慢，不靠底部反弹或顶部抬肘凑幅度。"
+      ],
+      "mistakes": [
+        "每次都要摆髋或后仰，说明应先减轻重量并稳住骨盆。",
+        "避免卷腕或明显抬肘；直杠握法不适时先调整器械与握法。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Barbell Curl",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl.json"
+        },
+        {
+          "title": "ACE · Bicep Curl",
+          "url": "https://www.acefitness.org/resources/everyone/exercise-library/70/bicep-curl/"
+        }
+      ]
+    },
+    "站姿哑铃交替弯举": {
+      "target": "肱二头肌为主，目标次数按每侧分别计算。",
+      "setup": [
+        "双脚约髋宽，哑铃自然垂于体侧，起始掌心朝向大腿。",
+        "腹部轻收、膝盖微松，选左右手都无需甩动的重量。"
+      ],
+      "alignment": [
+        "上臂留在躯干附近，肩部自然，头颈与骨盆保持稳定。",
+        "手腕不折弯，随前臂自然转掌，不突然拧腕追求旋转幅度。"
+      ],
+      "execution": [
+        "一侧屈肘上举，同时逐渐转至掌心朝上，感受肱二头肌收紧。",
+        "缓慢放下并转回掌心朝内，再换另一侧；按当前计划完成每侧目标次数。"
+      ],
+      "breathingTempo": [
+        "每侧举起时呼气，放下时吸气，换手时不屏住呼吸。",
+        "一侧回到起始位置再换手，两侧使用相同的可控幅度。"
+      ],
+      "mistakes": [
+        "避免扭转躯干、耸肩或抬肘，把哑铃甩向肩部。",
+        "不要把左右合计8–12次当成每侧目标，左右各自完成目标次数。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Dumbbell Alternate Bicep Curl",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Alternate_Bicep_Curl.json"
+        }
+      ]
+    },
+    "坐姿哑铃推肩": {
+      "target": "三角肌前束、中束为主，肱三头肌协助伸肘。",
+      "setup": [
+        "靠背调至接近直立，双脚踩稳，臀部和上背贴住凳面。",
+        "先把哑铃放大腿，再逐侧稳定送至肩旁，不直接甩举就位。"
+      ],
+      "alignment": [
+        "腹部收紧，肋骨位于骨盆上方，腰部保留自然弧度。",
+        "前臂尽量接近竖直，手腕平直，双肘可略朝身体前方。"
+      ],
+      "execution": [
+        "肩部带动上臂向上推起，两侧同步，将哑铃送到肩部上方。",
+        "控制下降至舒适肩旁位置，肩部无疼痛、躯干不失稳为准。"
+      ],
+      "breathingTempo": [
+        "推起时呼气、下降时吸气，全程保持腹部适度收紧。",
+        "推起平稳、下降稍慢，顶端不碰撞哑铃或猛顶肘关节。"
+      ],
+      "mistakes": [
+        "避免为了推起重量过度挺腰、抬臀，或把头向前伸。",
+        "双侧明显不同步、耸肩硬顶时先减重，不用腰部代偿。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Dumbbell Shoulder Press",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shoulder_Press.json"
+        }
+      ]
+    },
+    "哑铃侧平举": {
+      "target": "三角肌中束为主，肩胛周围肌群协助。",
+      "setup": [
+        "双脚约髋宽、膝盖微屈，哑铃自然放体侧，腹部适度收紧。",
+        "使用能全程控制的轻重量，先稳定站姿再开始抬臂。"
+      ],
+      "alignment": [
+        "肘部轻微弯曲并保持，手腕自然平直，拇指朝前或略朝上。",
+        "可略朝身体前方的舒适轨迹抬臂，不刻意做拇指向下的倒水动作。"
+      ],
+      "execution": [
+        "想象以上臂向两侧展开，平稳抬起，不用手腕先甩动哑铃。",
+        "到接近肩高（约肩外展90°）或更低的舒适位置，再缓慢回落。"
+      ],
+      "breathingTempo": [
+        "抬起时呼气、回落时吸气，保持自然连续呼吸。",
+        "顶端可稍停，下降稍慢，不让哑铃直接坠回大腿。"
+      ],
+      "mistakes": [
+        "避免用蹬腿、屈膝弹起或前后摆动把过重哑铃甩上去。",
+        "避免主动耸肩、翻腕或强求高于肩部，出现夹痛时停止。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Side Lateral Raise",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise.json"
+        },
+        {
+          "title": "NSCA · Shoulder Training",
+          "url": "https://dxpprod.nsca.com/education/articles/tsac-report/rehabilitation-to-performance-of-the-shoulder-for-the-tactical-athlete/"
+        }
+      ]
+    },
+    "俯身哑铃反向飞鸟": {
+      "target": "三角肌后束为主，菱形肌和斜方肌中部协助。",
+      "setup": [
+        "站在斜凳前，双脚踩稳、膝盖微屈，从髋部向前折叠躯干。",
+        "调好凳面，让额头仅轻触作定位，不把身体重量压在头颈上。"
+      ],
+      "alignment": [
+        "腰背自然平直、头颈顺着脊柱延长，俯身角度保持稳定。",
+        "双臂垂在肩下、掌心相对，肘部微屈且弯曲程度固定。"
+      ],
+      "execution": [
+        "用肩后侧带动上臂向两侧打开，不把哑铃拉向腰部做划船。",
+        "上臂接近躯干高度或到舒适范围后，控制双臂慢慢回到肩下。"
+      ],
+      "breathingTempo": [
+        "打开时呼气、还原时吸气，不屏气，也不借抬头帮助发力。",
+        "顶端稍停感受肩后侧收紧，再缓慢下放，保持躯干稳定。"
+      ],
+      "mistakes": [
+        "避免抬头顶凳或用额头压凳借力，避免耸肩挤压颈部。",
+        "避免挺腰甩动或不断屈肘，把动作变成俯身划船。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Bent Over Dumbbell Rear Delt Raise With Head On Bench",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench.json"
+        }
+      ],
+      "note": "当前示范图为额头轻触凳面的俯身变式。颈部不承担身体重量，不能把图片理解为用头支撑。"
+    },
+    "绳索面拉": {
+      "target": "三角肌后束、肩袖外旋肌群与肩胛周围肌群。",
+      "setup": [
+        "绳索固定在接近面部或略高的位置，双手握住绳索两端。",
+        "后退至有轻微张力，双脚踩稳、膝盖微屈，躯干保持直立。"
+      ],
+      "alignment": [
+        "头颈与脊柱保持自然，收紧腹部，不用后仰身体抵住重量。",
+        "双肘向两侧打开，肘高与外旋幅度以肩部舒适为准。"
+      ],
+      "execution": [
+        "肩胛自然向后滑动，屈肘把绳索拉向面部，双手逐渐分开。",
+        "末端允许肩部自然外旋，再缓慢伸臂回位，不强扭出固定姿势。"
+      ],
+      "breathingTempo": [
+        "拉近时呼气、还原时吸气，呼吸保持连续。",
+        "拉近后稍停，回程稍慢，不让配重片突然撞回。"
+      ],
+      "mistakes": [
+        "避免用力耸肩、前伸头部迎绳，或靠后仰和甩腰拉近。",
+        "不要为追求固定肘角硬扭肩膀；不能稳定完成时先减重。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Face Pull",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull.json"
+        },
+        {
+          "title": "NSCA · Face Pull",
+          "url": "https://www.nsca.com/education/articles/kinetic-select/face-pull-machine/"
+        }
+      ]
+    },
+    "悬垂屈膝举腿": {
+      "target": "腹部与髋屈肌协同，腹肌控制骨盆，握力和肩部维持悬垂。",
+      "setup": [
+        "握稳单杠，双手约肩宽或略宽，先确认横杆固定可靠。",
+        "手臂伸展，肩部保持主动稳定，双腿静止，再轻轻屈膝。"
+      ],
+      "alignment": [
+        "头颈自然、肋骨不过度上翻，先稳定身体，不借摆动起腿。",
+        "膝部保持舒适弯曲，抬至能控制骨盆的位置，不硬凑固定高度。"
+      ],
+      "execution": [
+        "缓慢抬膝朝向腹部，配合腹部收紧，让骨盆小幅向上卷。",
+        "控制腿部下降，回到身体不摆动的位置再开始下一次。"
+      ],
+      "breathingTempo": [
+        "抬膝卷起时呼气，受控下降时吸气，不憋气追次数。",
+        "下降稍慢；若开始摇摆，先停稳身体再继续。"
+      ],
+      "mistakes": [
+        "避免甩腿、后仰借力，或仅抬大腿而完全失去腹部控制。",
+        "不要用肩部松垮悬挂硬撑；握力或肩部无法稳定时停止这一组。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Hanging Leg Raise",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise.json"
+        }
+      ],
+      "note": "本图为屈膝举腿变式，不能直接套用直腿举腿的幅度要求；先练身体稳定与骨盆控制。"
+    },
+    "反向山羊挺身卷腹": {
+      "target": "按原参考变式进行腹部张力与躯干控制训练。",
+      "setup": [
+        "先由现场教练确认器械允许图示反向支撑，并调好脚部固定与支撑垫。",
+        "按原图固定腿部、双臂抱胸，建立稳定斜体位，先以徒手练习。"
+      ],
+      "alignment": [
+        "原图未标注椅面角度，不能从二维图片确定度数，不套用固定角度。",
+        "保持骨盆和支撑点稳定，在能控制的范围内小幅卷起，避免腰部反弓。"
+      ],
+      "execution": [
+        "先收紧腹部维持斜体支撑，再尝试让胸廓向骨盆靠近的小幅动作。",
+        "缓慢回到起始斜体位，不靠腿部蹬动、反弹或大幅折叠腰部。"
+      ],
+      "breathingTempo": [
+        "小幅卷起时呼气，还原时吸气，保持能够连续呼吸的腹部张力。",
+        "整个动作缓慢可控，不用速度凑次数，先确认正确轨迹再增加幅度。"
+      ],
+      "mistakes": [
+        "不要把原参考变式替换成俯身普通背伸，也不主动大幅后仰挺腰。",
+        "未确认脚部固定与器械适用时不上器械，不自行追加负重或旋转。"
+      ],
+      "sources": [
+        {
+          "title": "用户原参考图",
+          "url": "roman-chair-reference.jpg"
+        }
+      ],
+      "note": "此名称和变式仅依据你提供的参考图，尚无可核对的标准化动作资料。图片未提供器械角度和完整轨迹，具体设置须由现场教练确认。"
+    },
+    "平板支撑": {
+      "target": "腹部抗伸展与全身躯干稳定，臀部和肩部共同参与。",
+      "setup": [
+        "前臂与脚尖支撑，肘部放在肩部正下方，双脚踩稳。",
+        "先轻收腹部和臀部，再抬离地面；需要时从较短保持开始。"
+      ],
+      "alignment": [
+        "从侧面看，头、背、髋与脚跟尽量成一直线，不塌腰或抬得过高。",
+        "上臂与地面大致垂直，肘部约在肩下，不将头向前探。"
+      ],
+      "execution": [
+        "想象轻轻收住肋骨并让前臂推地，用腹部维持身体不下沉。",
+        "按当前计划的组数和保持时间练习；一旦无法保持姿势，应提前结束本组。"
+      ],
+      "breathingTempo": [
+        "保持均匀呼吸，不通过一直憋气撑住时间。",
+        "这是静态保持动作，不需反复上下起落或用晃动延长时间。"
+      ],
+      "mistakes": [
+        "避免腰部下塌、臀部过高、颈部抬起，或只让肩膀承担所有压力。",
+        "不要为凑足秒数牺牲姿势，保持质量优先于勉强延长时间。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Plank",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank.json"
+        },
+        {
+          "title": "ACE · Front Plank",
+          "url": "https://www.acefitness.org/resources/everyone/exercise-library/32/front-plank/"
+        }
+      ]
+    },
+    "跪姿绳索卷腹": {
+      "target": "腹直肌等腹部肌群控制躯干卷曲，手臂主要固定绳索。",
+      "setup": [
+        "绳索接高位滑轮，面向器械跪稳，绳头放在脸部两侧。",
+        "膝下可加垫，先选轻重量，让髋部稳定并确认绳索不会磨擦颈部。"
+      ],
+      "alignment": [
+        "髋部保持相对固定，手臂位置稳定，不用肘部反复拉绳。",
+        "在腹部能控制的范围卷曲躯干，不必让头碰地，也不套固定屈曲角度。"
+      ],
+      "execution": [
+        "呼气收腹，让胸廓向骨盆靠近，肘部随躯干向大腿方向移动。",
+        "底部稍停后慢慢还原到起始位，保持张力，不刻意向后反弓腰部。"
+      ],
+      "breathingTempo": [
+        "向下卷曲时呼气，缓慢还原时吸气，保持腹部有控制。",
+        "卷起和还原均放慢，不靠猛点头、甩绳或配重反弹完成。"
+      ],
+      "mistakes": [
+        "避免只在髋部折叠、臀部坐向脚跟，把卷腹做成鞠躬。",
+        "避免手臂下拉代替腹部发力，或用超出控制的重量压向地面。"
+      ],
+      "sources": [
+        {
+          "title": "Free Exercise DB · Cable Crunch",
+          "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crunch.json"
+        }
+      ]
+    }
+  }
+}

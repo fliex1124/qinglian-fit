@@ -100,7 +100,32 @@ function exerciseIllustration(name) {
   return `<div class="exercise-media ${guide.reference ? 'exercise-media-reference' : guide.frames.length === 1 ? 'exercise-media-single' : ''}">${guide.frames.map(frame => `<figure><a href="${esc(frame.path)}" target="_blank" rel="noopener" aria-label="放大查看${esc(name)}${esc(frame.label)}"><img src="${esc(frame.path)}" alt="${esc(name)} · ${esc(frame.label)}" loading="lazy" decoding="async" data-exercise-image></a><figcaption>${esc(frame.label)}</figcaption></figure>`).join('')}</div>`;
 }
 
+const expandedTechniques = new Set();
+
+function rememberTechniqueExpansion() {
+  for (const detail of document.querySelectorAll?.('details[data-exercise-technique]') || []) {
+    if (detail.open) expandedTechniques.add(detail.dataset.techniqueKey);
+    else expandedTechniques.delete(detail.dataset.techniqueKey);
+  }
+}
+
+function exerciseTechnique(name, key) {
+  const info = EXERCISE_GUIDES[name]?.technique;
+  if (!info) return '<p class="exercise-technique-pending">详细动作要领待补充：此动作尚未核对，请确认准确名称和器械变式。</p>';
+  const sections = [['setup', '起始姿势'], ['alignment', '角度与活动范围'], ['execution', '发力与动作过程'], ['breathingTempo', '呼吸与节奏'], ['mistakes', '常见错误']];
+  const sources = (info.sources || []).filter(source => typeof source.url === 'string' && (source.url.startsWith('https://') || source.url === 'roman-chair-reference.jpg'));
+  return `<details class="exercise-technique" data-exercise-technique data-technique-key="${esc(key)}" ${expandedTechniques.has(key) ? 'open' : ''}><summary aria-label="${esc(name)}：详细动作要领"><span><strong>详细动作要领</strong><small>姿势、角度、发力与常见错误</small></span><span class="technique-chevron" aria-hidden="true">⌄</span></summary><div class="technique-body"><p class="technique-target"><span>主要训练</span>${esc(info.target)}</p>${info.note ? `<p class="technique-note">${esc(info.note)}</p>` : ''}<dl class="technique-sections">${sections.map(([field, title]) => `<div class="technique-section"><dt>${title}</dt><dd><ul>${(info[field] || []).map(line => `<li>${esc(line)}</li>`).join('')}</ul></dd></div>`).join('')}</dl><div class="technique-sources"><span>参考资料</span>${sources.map(source => `<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.title)}</a>`).join('')}</div></div></details>`;
+}
+
+document.addEventListener('toggle', e => {
+  const detail = e.target;
+  if (!detail.matches?.('details[data-exercise-technique]') || !detail.isConnected) return;
+  if (detail.open) expandedTechniques.add(detail.dataset.techniqueKey);
+  else expandedTechniques.delete(detail.dataset.techniqueKey);
+}, true);
+
 function trainingDetail() {
+  rememberTechniqueExpansion();
   const p = progress(), d = curday();
   const head = `<div class="training-heading"><p class="muted">${esc(plan().name)}</p><h1>今日训练</h1><p class="lead">跟着示范完成动作，再勾选记录。</p></div>`;
   if (p.restDate === datekey()) return head + `<div class="card"><h2>今天休息一天</h2><p class="muted">待练内容已保留，明天继续。休息不算漏练。</p><button class="btn" data-tab="home">返回首页</button></div>`;
@@ -112,7 +137,7 @@ function trainingDetail() {
   return head + `<section class="training-overview"><div><span class="training-day">第 ${p.index + 1} / ${plan().days.length} 天</span><h2>${esc(d.name)}</h2><p class="muted">${summary.total}个动作 · ${esc(ac.name)}目标${ac.target}分钟</p></div><div class="training-progress" aria-label="${summary.done}个动作已完成"><strong>${summary.done}<span> / ${summary.total}</span></strong><span>动作已完成</span></div><div class="miniProgress"><span style="width:${pct}%"></span></div></section><div class="training-toolbar"><button class="btn sm" data-action="begin">${s.started ? (s.paused ? '继续训练' : '暂停训练') : '开始训练'}</button><button class="textbtn" data-action="rest-today">安排休息</button><span class="muted small">${s.started ? (s.paused ? '已暂停，进度保留' : '进度已保存') : '勾选动作也可开始'}</span></div><div class="training-layout"><div class="exercise-cards">${d.exercises.map((a, i) => {
     const done = summary.flags[i], guide = EXERCISE_GUIDES[a[0]], cues = guide?.cues || [a[3] || '保持动作控制，按自身能力完成。'];
     const legacyPartial = !done && (s.checks?.[i] || []).some(Boolean);
-    return `<article class="exercise-card ${done ? 'is-complete' : ''}" data-exercise-name="${esc(a[0])}"><header class="exercise-card-heading"><span class="exercise-order">${String(i + 1).padStart(2, '0')}</span><h2>${esc(a[0])}</h2><span class="exercise-state ${done ? 'is-complete' : ''}">${done ? '已完成' : '待完成'}</span></header>${exerciseIllustration(a[0])}<div class="exercise-card-body"><div class="exercise-target">${esc(exerciseTarget(a))}</div><ul class="exercise-cues">${cues.map(cue => `<li>${esc(cue)}</li>`).join('')}</ul>${legacyPartial ? '<p class="legacy-draft-note">旧版逐组草稿已保留</p>' : ''}<button class="exercise-complete-button ${done ? 'is-complete' : ''}" data-action="exercise-check" data-ex="${i}" aria-pressed="${done}" aria-label="${done ? '取消完成' : '完成动作'}：${esc(a[0])}"><span aria-hidden="true">${done ? '✓' : '○'}</span>${done ? '已完成 · 点击取消' : '勾选动作完成'}</button></div></article>`;
+    return `<article class="exercise-card ${done ? 'is-complete' : ''}" data-exercise-name="${esc(a[0])}"><header class="exercise-card-heading"><span class="exercise-order">${String(i + 1).padStart(2, '0')}</span><h2>${esc(a[0])}</h2><span class="exercise-state ${done ? 'is-complete' : ''}">${done ? '已完成' : '待完成'}</span></header>${exerciseIllustration(a[0])}<div class="exercise-card-body"><div class="exercise-target">${esc(exerciseTarget(a))}</div><ul class="exercise-cues">${cues.map(cue => `<li>${esc(cue)}</li>`).join('')}</ul>${exerciseTechnique(a[0], JSON.stringify([plan().id, p.index, a[0], i]))}${legacyPartial ? '<p class="legacy-draft-note">旧版逐组草稿已保留</p>' : ''}<button class="exercise-complete-button ${done ? 'is-complete' : ''}" data-action="exercise-check" data-ex="${i}" aria-pressed="${done}" aria-label="${done ? '取消完成' : '完成动作'}：${esc(a[0])}"><span aria-hidden="true">${done ? '✓' : '○'}</span>${done ? '已完成 · 点击取消' : '勾选动作完成'}</button></div></article>`;
   }).join('')}</div><aside class="training-side"><section class="card training-cardio"><h2>${esc(ac.name)}</h2><p class="cardio-target"><strong>${ac.target}</strong> 分钟目标</p><div class="field"><label>实际时长（分钟，可选）<input id="cardioMin" type="number" min="0" max="600" placeholder="尚未记录" value="${esc(s.cardio)}"></label></div>${cardioTimerMarkup(s)}<p class="small muted">按实际完成记录，未填不会算作完成目标。</p></section><p class="training-supplement">晚饭后肌酸3克。饮食蛋白质不足时可按需补充蛋白粉；20克粉约含16克蛋白质。</p><div class="training-submit"><span>${summary.done}/${summary.total} 个动作已完成</span><button class="btn mint block" data-action="finish">完成今日训练</button><p>确认打卡后，才进入下一个训练日。</p></div></aside></div>`;
 }
 

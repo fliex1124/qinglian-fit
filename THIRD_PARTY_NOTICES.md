@@ -2,7 +2,7 @@
 
 ## 动作图库
 
-18 个动作使用 [Free Exercise DB](https://github.com/yuhonas/free-exercise-db) 的照片与资料。来源项目标为 Unlicense，原文保存在 [exercise-library-LICENSE](assets/exercise-library-LICENSE)。各动作来源、图片路径和 SHA256 见 [exercise-guides.json](assets/exercise-guides.json) 及 [exercise-candidates.json](assets/exercise-candidates.json)。
+19 个动作使用 [Free Exercise DB](https://github.com/yuhonas/free-exercise-db) 的照片与资料。来源项目标为 Unlicense，原文保存在 [exercise-library-LICENSE](assets/exercise-library-LICENSE)。各动作来源、图片路径和 SHA256 见 [exercise-guides.json](assets/exercise-guides.json) 及 [exercise-candidates.json](assets/exercise-candidates.json)。
 
 `roman-chair-reference.jpg` 为项目使用者提供的「反向山羊挺身卷腹」教学参考图，沿用已有动作定义。本地未附作者或再分发许可证证明；它不包含在上述图库的 Unlicense 声明内，本仓库也不对其另行授予使用许可。
 

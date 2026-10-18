@@ -5,14 +5,14 @@ import zipfile
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-apk=ROOT/'dist/qinglian-fit-0.7.0.apk'
+apk=ROOT/'dist/qinglian-fit-0.7.2.apk'
 with zipfile.ZipFile(apk) as bundle:
     assert bundle.testzip() is None,'APK CRC failure'
     names=set(bundle.namelist())
     assert {'AndroidManifest.xml','classes.dex','resources.arsc'}.issubset(names)
     assert bundle.read('classes.dex').startswith(b'dex\n'),'Invalid Android bytecode'
     manifest=json.loads(bundle.read('assets/bundle-manifest.json'))
-    assert manifest['exerciseCount']==19
+    assert manifest['exerciseCount']==20
     expected={'assets/'+item['path'] for item in manifest['files']}|{'assets/bundle-manifest.json'}
     assert {name for name in names if name.startswith('assets/')}==expected,'Unexpected packaged asset'
     for item in manifest['files']:
@@ -29,9 +29,9 @@ with zipfile.ZipFile(apk) as bundle:
     for guide in guides.values():
         for frame in guide['frames']:
             assert bundle.read('assets/'+frame['path']).startswith(b'\xff\xd8\xff')
-result={'app':'轻练 FIT','version':'0.7.0','package':'cn.local.qinglianfit','minAndroid':'8.0 / API26',
+result={'app':'轻练 FIT','version':'0.7.2','package':'cn.local.qinglianfit','minAndroid':'8.0 / API26',
         'bytes':apk.stat().st_size,'sha256':hashlib.sha256(apk.read_bytes()).hexdigest(),
-        'reviewedExercises':19,'packagedAssets':len(manifest['files']),
+        'reviewedExercises':20,'packagedAssets':len(manifest['files']),
         'sourceHashesMatch':True,'noPrivateRecordsOrKeys':True,'realDeviceTested':False}
-(ROOT/'dist/package-verification.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+(ROOT/'dist/package-verification-0.7.2.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(result,ensure_ascii=False,indent=2))

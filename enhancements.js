@@ -64,6 +64,9 @@ function prepareBackupRestore(payload){
 }
 function restorePreparedState(candidate){
  validateState(candidate);
+ candidate=structuredClone(candidate);
+ migrateStarterAbsPlan(candidate);
+ validateState(candidate);
  const old={state:st,persisted,raw:persistedRaw,broken:storageBroken,tab};
  const currentRaw=localStorage.getItem(KEY);
  if(!storageBroken&&currentRaw!==persistedRaw)throw Error('另一个页面已更新数据，请刷新后再恢复');
@@ -138,5 +141,8 @@ document.addEventListener('submit',async e=>{const f=e.target,fd=new FormData(f)
  }catch(err){toast(err.message)}finally{}});
 window.addEventListener('error',e=>{if(e.message.includes('保存失败'))toast(e.message)});
 try{validateState(st)}catch(e){storageBroken=true;st=defaultState();persisted=JSON.stringify(st)}
+let starterUpgradeFailed=false;
+try{if(!storageBroken&&migrateStarterAbsPlan(st))save()}catch(e){starterUpgradeFailed=true}
 render();if(storageBroken)toast('原存储读取异常，已停止覆盖。请先检查并导出原始数据。');
+else if(starterUpgradeFailed)toast('新增动作尚未保存，原计划和记录已保留。请检查存储空间或刷新重试。');
 

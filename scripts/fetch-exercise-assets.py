@@ -26,6 +26,7 @@ CANDIDATES={
  '绳索面拉':'Face_Pull',
  '悬垂屈膝举腿':'Hanging_Leg_Raise',
  '平板支撑':'Plank',
+ '跪姿绳索卷腹':'Cable_Crunch',
 }
 
 def download(item):

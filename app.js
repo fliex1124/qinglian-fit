@@ -3,9 +3,18 @@ const DAYPLAN=[
 {name:'胸部 + 三头',short:'胸＋三头',emoji:'🏋️',exercises:[['杠铃平板卧推',4,'8–12','胸部主训练；注意有人保护'],['上斜哑铃卧推',4,'8–12','凳角约30°；偏重上胸'],['器械夹胸（蝴蝶机）',4,'8–12','缓慢控制还原'],['俯卧撑',4,'8–12','保持身体一条直线'],['绳索下压',4,'8–12','训练肱三头肌'],['双杠臂屈伸',4,'8–12','如吃力用辅助器械']]},
 {name:'背部 + 二头',short:'背＋二头',emoji:'💪',exercises:[['辅助引体向上',4,'8–12','按需要使用辅助重量'],['坐姿划船',4,'8–12','背部发力、身体稳定'],['高位下拉',4,'8–12','勿过度后仰借力'],['直臂下压',4,'8–12','控制肩部动作'],['杠铃弯举',4,'8–12','减少身体晃动'],['站姿哑铃交替弯举',4,'8–12/侧','左右手分别计数']]},
 {name:'肩部',short:'肩部',emoji:'🎯',exercises:[['坐姿哑铃推肩',4,'8–12','推举时腰部稳定'],['哑铃侧平举',4,'8–12','不借力甩动'],['俯身哑铃反向飞鸟',4,'8–12','肩后束'],['绳索面拉',4,'8–12','肩后束及上背肌群']]},
-{name:'腹部',short:'腹肌',emoji:'⚡',exercises:[['悬垂屈膝举腿',4,'8–12','缓慢抬膝，不借摆动'],['反向山羊挺身卷腹',4,'8–12','请以你提供的器械参考图和教练指导为准'],['平板支撑',4,'30–60秒','按秒计时，避免塌腰']]}
+{name:'腹部',short:'腹肌',emoji:'⚡',exercises:[['悬垂屈膝举腿',4,'8–12','缓慢抬膝，不借摆动'],['反向山羊挺身卷腹',4,'8–12','请以你提供的器械参考图和教练指导为准'],['平板支撑',4,'30–60秒','按秒计时，避免塌腰'],['跪姿绳索卷腹',4,'8–12','髋部稳定，用腹肌卷曲躯干，缓慢还原']]}
 ];
 const seedPlan={id:'starter',name:'我的薄肌四天循环',days:DAYPLAN,system:true};
+// Append only to the known system template so legacy index-based checks stay aligned.
+function migrateStarterAbsPlan(state) {
+  const starter = state.plans.find(p => p.id === 'starter' && p.system === true);
+  if (!starter || starter.days.length !== 4) return false;
+  const day = starter.days[3], previous = DAYPLAN[3].exercises.slice(0, 3);
+  if (day.exercises.length !== previous.length || day.exercises.some((a, i) => a[0] !== previous[i][0])) return false;
+  day.exercises.push(structuredClone(DAYPLAN[3].exercises[3]));
+  return true;
+}
 const KEY='qinglian_fit_v01';
 const defaultState=()=>({plans:[structuredClone(seedPlan)],selected:'starter',progress:{starter:{index:0,choice:false,restDate:null,session:{checks:{},inputs:{},cardio:''}}},history:[],meals:[],weights:[],photos:[],settings:{dailyBase:2000,cardioPerMin:7,strengthPerSession:180,ai:false},chat:[]});
 let storageBroken=false, loadedRaw=null; let st;try{loadedRaw=localStorage.getItem(KEY);st=JSON.parse(loadedRaw)||defaultState()}catch(e){storageBroken=true;st=defaultState()};

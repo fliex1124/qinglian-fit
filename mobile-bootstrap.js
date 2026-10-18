@@ -5,7 +5,7 @@
   const bridge = window.QinglianAndroid;
   const native = !!bridge && location.protocol === 'https:' && location.hostname === 'appassets.androidplatform.net';
   const KEY = 'qinglian_fit_v01';
-  const mobile = window.FitMobile = {native, version:'0.7.0', storage:{ok:true}};
+  const mobile = window.FitMobile = {native, version:'0.7.2', storage:{ok:true}};
   if (!native) return;
   document.documentElement.classList.add('fit-native');
   function parse(raw, fallback) {try {return JSON.parse(raw);} catch (_) {return fallback;}}

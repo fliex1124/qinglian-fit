@@ -304,5 +304,22 @@
         "sha256": "7f6b690f7594dfab002fb27d36f8247957171b08d19020f24208afd4d5186043"
       }
     ]
+  },
+  {
+    "name": "跪姿绳索卷腹",
+    "sourceId": "Cable_Crunch",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Cable_Crunch/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crunch/0.jpg",
+        "sha256": "196cc4cb510ecafec24c1648c851aa160d4652917d7c0137b4cf7fb1eeb9c668"
+      },
+      {
+        "path": "assets/exercises/Cable_Crunch/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crunch/1.jpg",
+        "sha256": "e65fc1effc632eb78d8cda09ef95bf89c4bb235b15757e9a33306ca61a78f606"
+      }
+    ]
   }
 ]

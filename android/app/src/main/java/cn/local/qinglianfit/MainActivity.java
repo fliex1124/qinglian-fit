@@ -379,7 +379,7 @@ public final class MainActivity extends Activity {
         @JavascriptInterface public void showAISettings(){personalAI.showSettings();}
         @JavascriptInterface public void startAIRequest(String id,String path,String raw,String token){personalAI.start(id,path,raw,token);}
         @JavascriptInterface public void cancelAIRequest(String id){personalAI.cancel(id);}
-        @JavascriptInterface public String platformInfo() { return "{\"platform\":\"android\",\"version\":\"0.7.0\"}"; }
+        @JavascriptInterface public String platformInfo() { return "{\"platform\":\"android\",\"version\":\"0.7.2\"}"; }
         @JavascriptInterface public String readState() { synchronized(stateLock) { return readValid(stateFile(false)); } }
         @JavascriptInterface public String readPreviousState() { synchronized(stateLock) { return readValid(stateFile(true)); } }
         @JavascriptInterface public String writeState(String raw) {
