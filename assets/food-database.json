@@ -1,0 +1,2171 @@
+{
+  "version": 1,
+  "notice": "参考估算库，不是实验室检测值。按食物可食部分重量计算，商品优先核对营养标签。",
+  "foods": [
+    {
+      "id": "food-000",
+      "name": "米饭",
+      "kcal": 116.0,
+      "protein": 2.6,
+      "carbs": 25.9,
+      "fat": 0.3,
+      "servingGrams": 150.0,
+      "aliases": [
+        "白米饭",
+        "熟米饭",
+        "主食"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-001",
+      "name": "鸡蛋",
+      "kcal": 143.0,
+      "protein": 12.6,
+      "carbs": 1.1,
+      "fat": 9.5,
+      "servingGrams": 50.0,
+      "aliases": [
+        "水煮蛋",
+        "鸡蛋",
+        "熟鸡蛋"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-002",
+      "name": "鸭腿（熟）",
+      "kcal": 235.0,
+      "protein": 22.0,
+      "carbs": 0.0,
+      "fat": 16.3,
+      "servingGrams": 120.0,
+      "aliases": [
+        "鸭腿",
+        "卤鸭腿"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-003",
+      "name": "鸡腿肉（熟）",
+      "kcal": 215.0,
+      "protein": 24.0,
+      "carbs": 0.0,
+      "fat": 13.2,
+      "servingGrams": 120.0,
+      "aliases": [
+        "鸡腿"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-004",
+      "name": "鸡胸肉（熟）",
+      "kcal": 165.0,
+      "protein": 31.0,
+      "carbs": 0.0,
+      "fat": 3.6,
+      "servingGrams": 100.0,
+      "aliases": [
+        "鸡胸",
+        "鸡肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-005",
+      "name": "韭菜盒子",
+      "kcal": 230.0,
+      "protein": 6.0,
+      "carbs": 30.0,
+      "fat": 9.6,
+      "servingGrams": 120.0,
+      "aliases": [
+        "韭菜饼"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-006",
+      "name": "炒青菜",
+      "kcal": 90.0,
+      "protein": 2.0,
+      "carbs": 5.0,
+      "fat": 6.9,
+      "servingGrams": 150.0,
+      "aliases": [
+        "炒时蔬",
+        "青菜",
+        "炒菜"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-007",
+      "name": "炒土豆丝",
+      "kcal": 140.0,
+      "protein": 2.0,
+      "carbs": 18.0,
+      "fat": 6.7,
+      "servingGrams": 150.0,
+      "aliases": [
+        "土豆丝",
+        "酸辣土豆丝"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-008",
+      "name": "豆腐",
+      "kcal": 80.0,
+      "protein": 8.0,
+      "carbs": 2.0,
+      "fat": 4.4,
+      "servingGrams": 100.0,
+      "aliases": [
+        "北豆腐",
+        "嫩豆腐",
+        "豆腐块"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-009",
+      "name": "牛奶",
+      "kcal": 60.0,
+      "protein": 3.2,
+      "carbs": 4.8,
+      "fat": 3.1,
+      "servingGrams": 250.0,
+      "aliases": [
+        "纯牛奶",
+        "全脂奶"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-010",
+      "name": "香蕉",
+      "kcal": 89.0,
+      "protein": 1.1,
+      "carbs": 22.8,
+      "fat": 0.3,
+      "servingGrams": 100.0,
+      "aliases": [
+        "水果"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-011",
+      "name": "苹果",
+      "kcal": 52.0,
+      "protein": 0.3,
+      "carbs": 13.8,
+      "fat": 0.2,
+      "servingGrams": 180.0,
+      "aliases": [
+        "水果"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-012",
+      "name": "面条（熟）",
+      "kcal": 138.0,
+      "protein": 4.5,
+      "carbs": 25.0,
+      "fat": 2.2,
+      "servingGrams": 200.0,
+      "aliases": [
+        "面条",
+        "汤面"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-013",
+      "name": "食堂荤菜（粗估）",
+      "kcal": 200.0,
+      "protein": 12.0,
+      "carbs": 8.0,
+      "fat": 13.3,
+      "servingGrams": 150.0,
+      "aliases": [
+        "食堂",
+        "肉菜"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-014",
+      "name": "其他食物（粗估）",
+      "kcal": 160.0,
+      "protein": 6.0,
+      "carbs": 20.0,
+      "fat": 6.2,
+      "servingGrams": 100.0,
+      "aliases": [
+        "其他"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-015",
+      "name": "馒头",
+      "kcal": 223.0,
+      "protein": 7.0,
+      "carbs": 46.0,
+      "fat": 1.1,
+      "servingGrams": 100.0,
+      "aliases": [
+        "白面馒头",
+        "主食"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-016",
+      "name": "包子（肉馅）",
+      "kcal": 230.0,
+      "protein": 8.0,
+      "carbs": 29.0,
+      "fat": 9.1,
+      "servingGrams": 80.0,
+      "aliases": [
+        "肉包",
+        "包子",
+        "小笼包"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-017",
+      "name": "水饺（猪肉）",
+      "kcal": 220.0,
+      "protein": 8.0,
+      "carbs": 27.0,
+      "fat": 8.9,
+      "servingGrams": 100.0,
+      "aliases": [
+        "饺子",
+        "水饺"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-018",
+      "name": "米粥",
+      "kcal": 46.0,
+      "protein": 1.1,
+      "carbs": 9.9,
+      "fat": 0.1,
+      "servingGrams": 250.0,
+      "aliases": [
+        "白粥",
+        "大米粥",
+        "稀饭"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-019",
+      "name": "燕麦片（干）",
+      "kcal": 389.0,
+      "protein": 16.9,
+      "carbs": 66.3,
+      "fat": 6.9,
+      "servingGrams": 40.0,
+      "aliases": [
+        "燕麦",
+        "燕麦片"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-020",
+      "name": "红薯（蒸）",
+      "kcal": 86.0,
+      "protein": 1.6,
+      "carbs": 20.0,
+      "fat": 0.1,
+      "servingGrams": 150.0,
+      "aliases": [
+        "红薯",
+        "番薯",
+        "地瓜"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-021",
+      "name": "玉米（熟）",
+      "kcal": 96.0,
+      "protein": 3.4,
+      "carbs": 21.0,
+      "fat": 1.5,
+      "servingGrams": 150.0,
+      "aliases": [
+        "玉米"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-022",
+      "name": "全麦面包",
+      "kcal": 247.0,
+      "protein": 13.0,
+      "carbs": 41.0,
+      "fat": 4.2,
+      "servingGrams": 60.0,
+      "aliases": [
+        "吐司",
+        "面包"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-023",
+      "name": "蛋炒饭",
+      "kcal": 185.0,
+      "protein": 6.0,
+      "carbs": 27.0,
+      "fat": 5.9,
+      "servingGrams": 300.0,
+      "aliases": [
+        "炒饭",
+        "扬州炒饭"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-024",
+      "name": "牛肉面",
+      "kcal": 145.0,
+      "protein": 6.0,
+      "carbs": 18.0,
+      "fat": 5.4,
+      "servingGrams": 400.0,
+      "aliases": [
+        "拉面",
+        "牛肉拉面"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-025",
+      "name": "豆浆（无糖）",
+      "kcal": 33.0,
+      "protein": 3.0,
+      "carbs": 1.7,
+      "fat": 1.7,
+      "servingGrams": 250.0,
+      "aliases": [
+        "豆浆",
+        "无糖豆浆"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-026",
+      "name": "酸奶（原味）",
+      "kcal": 75.0,
+      "protein": 3.1,
+      "carbs": 10.0,
+      "fat": 2.5,
+      "servingGrams": 150.0,
+      "aliases": [
+        "酸奶"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-027",
+      "name": "脱脂牛奶",
+      "kcal": 35.0,
+      "protein": 3.4,
+      "carbs": 5.0,
+      "fat": 0.1,
+      "servingGrams": 250.0,
+      "aliases": [
+        "脱脂奶"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-028",
+      "name": "乳清蛋白粉（参考）",
+      "kcal": 400.0,
+      "protein": 80.0,
+      "carbs": 8.0,
+      "fat": 5.3,
+      "servingGrams": 20.0,
+      "aliases": [
+        "蛋白粉",
+        "酵母蛋白粉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-029",
+      "name": "牛肉（瘦，熟）",
+      "kcal": 190.0,
+      "protein": 29.0,
+      "carbs": 0.0,
+      "fat": 8.2,
+      "servingGrams": 100.0,
+      "aliases": [
+        "瘦牛肉",
+        "牛肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-030",
+      "name": "猪里脊（熟）",
+      "kcal": 180.0,
+      "protein": 28.0,
+      "carbs": 0.0,
+      "fat": 7.6,
+      "servingGrams": 100.0,
+      "aliases": [
+        "猪肉",
+        "瘦肉",
+        "里脊"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-031",
+      "name": "虾仁（熟）",
+      "kcal": 99.0,
+      "protein": 24.0,
+      "carbs": 0.2,
+      "fat": 0.3,
+      "servingGrams": 100.0,
+      "aliases": [
+        "虾仁",
+        "虾"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-032",
+      "name": "三文鱼",
+      "kcal": 208.0,
+      "protein": 20.0,
+      "carbs": 0.0,
+      "fat": 13.0,
+      "servingGrams": 100.0,
+      "aliases": [
+        "鲑鱼"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-033",
+      "name": "西兰花（熟）",
+      "kcal": 35.0,
+      "protein": 2.4,
+      "carbs": 7.2,
+      "fat": 0.4,
+      "servingGrams": 150.0,
+      "aliases": [
+        "西兰花"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-034",
+      "name": "黄瓜",
+      "kcal": 15.0,
+      "protein": 0.7,
+      "carbs": 3.6,
+      "fat": 0.1,
+      "servingGrams": 150.0,
+      "aliases": [
+        "黄瓜条"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-035",
+      "name": "番茄",
+      "kcal": 18.0,
+      "protein": 0.9,
+      "carbs": 3.9,
+      "fat": 0.2,
+      "servingGrams": 150.0,
+      "aliases": [
+        "西红柿"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-036",
+      "name": "花生",
+      "kcal": 567.0,
+      "protein": 25.8,
+      "carbs": 16.1,
+      "fat": 49.2,
+      "servingGrams": 20.0,
+      "aliases": [
+        "花生米",
+        "坚果"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-037",
+      "name": "食用油",
+      "kcal": 900.0,
+      "protein": 0.0,
+      "carbs": 0.0,
+      "fat": 100.0,
+      "servingGrams": 5.0,
+      "aliases": [
+        "油",
+        "炒菜油"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-038",
+      "name": "白砂糖",
+      "kcal": 400.0,
+      "protein": 0.0,
+      "carbs": 100.0,
+      "fat": 0.0,
+      "servingGrams": 10.0,
+      "aliases": [
+        "糖"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-039",
+      "name": "麻婆豆腐",
+      "kcal": 135.0,
+      "protein": 7.0,
+      "carbs": 6.0,
+      "fat": 9.2,
+      "servingGrams": 150.0,
+      "aliases": [
+        "麻婆",
+        "豆腐"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-040",
+      "name": "家常豆腐",
+      "kcal": 145.0,
+      "protein": 8.0,
+      "carbs": 7.0,
+      "fat": 9.4,
+      "servingGrams": 150.0,
+      "aliases": [
+        "家常烧豆腐"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-041",
+      "name": "炸豆腐",
+      "kcal": 270.0,
+      "protein": 17.0,
+      "carbs": 10.0,
+      "fat": 18.0,
+      "servingGrams": 100.0,
+      "aliases": [
+        "油炸豆腐"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-042",
+      "name": "臭豆腐",
+      "kcal": 210.0,
+      "protein": 10.0,
+      "carbs": 14.0,
+      "fat": 12.7,
+      "servingGrams": 100.0,
+      "aliases": [
+        "炸臭豆腐"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-043",
+      "name": "土豆炖豆角",
+      "kcal": 110.0,
+      "protein": 3.0,
+      "carbs": 15.0,
+      "fat": 4.2,
+      "servingGrams": 150.0,
+      "aliases": [
+        "豆角土豆"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-044",
+      "name": "地三鲜",
+      "kcal": 150.0,
+      "protein": 2.0,
+      "carbs": 18.0,
+      "fat": 7.8,
+      "servingGrams": 150.0,
+      "aliases": [
+        "土豆茄子青椒"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-045",
+      "name": "薯条",
+      "kcal": 312.0,
+      "protein": 3.4,
+      "carbs": 41.0,
+      "fat": 15.0,
+      "servingGrams": 100.0,
+      "aliases": [
+        "炸薯条"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-046",
+      "name": "鱼香茄子",
+      "kcal": 160.0,
+      "protein": 2.5,
+      "carbs": 15.0,
+      "fat": 10.0,
+      "servingGrams": 150.0,
+      "aliases": [
+        "茄子"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-047",
+      "name": "蒜泥茄子",
+      "kcal": 75.0,
+      "protein": 1.5,
+      "carbs": 8.0,
+      "fat": 4.1,
+      "servingGrams": 150.0,
+      "aliases": [
+        "凉拌茄子"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-048",
+      "name": "肉末茄子",
+      "kcal": 170.0,
+      "protein": 6.0,
+      "carbs": 12.0,
+      "fat": 11.0,
+      "servingGrams": 150.0,
+      "aliases": [
+        "茄子肉末"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-049",
+      "name": "辣白菜",
+      "kcal": 40.0,
+      "protein": 2.0,
+      "carbs": 7.0,
+      "fat": 0.4,
+      "servingGrams": 100.0,
+      "aliases": [
+        "泡菜",
+        "酸白菜"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-050",
+      "name": "清蒸娃娃菜",
+      "kcal": 45.0,
+      "protein": 2.0,
+      "carbs": 6.0,
+      "fat": 1.4,
+      "servingGrams": 150.0,
+      "aliases": [
+        "娃娃菜"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-051",
+      "name": "手撕包菜",
+      "kcal": 90.0,
+      "protein": 2.0,
+      "carbs": 7.0,
+      "fat": 6.0,
+      "servingGrams": 150.0,
+      "aliases": [
+        "包菜",
+        "圆白菜"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-052",
+      "name": "蚝油生菜",
+      "kcal": 65.0,
+      "protein": 1.5,
+      "carbs": 6.0,
+      "fat": 3.9,
+      "servingGrams": 150.0,
+      "aliases": [
+        "生菜"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-053",
+      "name": "蒜蓉空心菜",
+      "kcal": 80.0,
+      "protein": 2.0,
+      "carbs": 6.0,
+      "fat": 5.3,
+      "servingGrams": 150.0,
+      "aliases": [
+        "空心菜"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-054",
+      "name": "清炒菠菜",
+      "kcal": 65.0,
+      "protein": 3.0,
+      "carbs": 5.0,
+      "fat": 3.7,
+      "servingGrams": 150.0,
+      "aliases": [
+        "菠菜"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-055",
+      "name": "清炒豆芽",
+      "kcal": 60.0,
+      "protein": 3.0,
+      "carbs": 6.0,
+      "fat": 2.7,
+      "servingGrams": 150.0,
+      "aliases": [
+        "豆芽"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-056",
+      "name": "毛豆",
+      "kcal": 123.0,
+      "protein": 13.0,
+      "carbs": 10.0,
+      "fat": 5.0,
+      "servingGrams": 100.0,
+      "aliases": [
+        "大豆",
+        "青豆",
+        "蚕豆"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-057",
+      "name": "蚝油西兰花",
+      "kcal": 80.0,
+      "protein": 3.0,
+      "carbs": 8.0,
+      "fat": 4.0,
+      "servingGrams": 150.0,
+      "aliases": [
+        "西兰花"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-058",
+      "name": "凉拌藕片",
+      "kcal": 70.0,
+      "protein": 2.0,
+      "carbs": 14.0,
+      "fat": 0.7,
+      "servingGrams": 150.0,
+      "aliases": [
+        "藕片",
+        "莲藕"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-059",
+      "name": "凉拌木耳",
+      "kcal": 60.0,
+      "protein": 2.0,
+      "carbs": 9.0,
+      "fat": 1.8,
+      "servingGrams": 100.0,
+      "aliases": [
+        "木耳"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-060",
+      "name": "拍黄瓜",
+      "kcal": 45.0,
+      "protein": 1.0,
+      "carbs": 5.0,
+      "fat": 2.3,
+      "servingGrams": 150.0,
+      "aliases": [
+        "凉拌黄瓜"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-061",
+      "name": "凉拌海带",
+      "kcal": 50.0,
+      "protein": 1.5,
+      "carbs": 7.0,
+      "fat": 1.8,
+      "servingGrams": 100.0,
+      "aliases": [
+        "海带"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-062",
+      "name": "拔丝山药",
+      "kcal": 250.0,
+      "protein": 2.0,
+      "carbs": 50.0,
+      "fat": 4.7,
+      "servingGrams": 100.0,
+      "aliases": [
+        "拔丝"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-063",
+      "name": "清炒山药",
+      "kcal": 100.0,
+      "protein": 2.0,
+      "carbs": 16.0,
+      "fat": 3.1,
+      "servingGrams": 150.0,
+      "aliases": [
+        "山药"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-064",
+      "name": "干煸四季豆",
+      "kcal": 145.0,
+      "protein": 4.0,
+      "carbs": 12.0,
+      "fat": 9.0,
+      "servingGrams": 150.0,
+      "aliases": [
+        "四季豆",
+        "豆角"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-065",
+      "name": "清炒蘑菇",
+      "kcal": 75.0,
+      "protein": 3.0,
+      "carbs": 7.0,
+      "fat": 3.9,
+      "servingGrams": 150.0,
+      "aliases": [
+        "蘑菇",
+        "平菇",
+        "香菇"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-066",
+      "name": "虎皮青椒",
+      "kcal": 120.0,
+      "protein": 2.0,
+      "carbs": 10.0,
+      "fat": 8.0,
+      "servingGrams": 150.0,
+      "aliases": [
+        "虎皮尖椒"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-067",
+      "name": "凉拌腐竹",
+      "kcal": 180.0,
+      "protein": 14.0,
+      "carbs": 8.0,
+      "fat": 10.2,
+      "servingGrams": 100.0,
+      "aliases": [
+        "腐竹"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-068",
+      "name": "干锅花菜",
+      "kcal": 120.0,
+      "protein": 4.0,
+      "carbs": 8.0,
+      "fat": 8.0,
+      "servingGrams": 150.0,
+      "aliases": [
+        "花菜",
+        "菜花"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-069",
+      "name": "松仁玉米",
+      "kcal": 170.0,
+      "protein": 4.0,
+      "carbs": 23.0,
+      "fat": 6.9,
+      "servingGrams": 150.0,
+      "aliases": [
+        "玉米松仁"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-070",
+      "name": "芹菜炒豆干",
+      "kcal": 110.0,
+      "protein": 8.0,
+      "carbs": 7.0,
+      "fat": 5.6,
+      "servingGrams": 150.0,
+      "aliases": [
+        "芹菜豆干",
+        "香干"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-071",
+      "name": "百合炒芹菜",
+      "kcal": 80.0,
+      "protein": 2.0,
+      "carbs": 13.0,
+      "fat": 2.2,
+      "servingGrams": 150.0,
+      "aliases": [
+        "芹菜百合"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-072",
+      "name": "韭菜炒豆干",
+      "kcal": 115.0,
+      "protein": 8.0,
+      "carbs": 7.0,
+      "fat": 6.1,
+      "servingGrams": 150.0,
+      "aliases": [
+        "韭菜香干"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-073",
+      "name": "番茄炒蛋",
+      "kcal": 120.0,
+      "protein": 6.0,
+      "carbs": 6.0,
+      "fat": 8.0,
+      "servingGrams": 150.0,
+      "aliases": [
+        "西红柿炒鸡蛋",
+        "西红柿炒蛋"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-074",
+      "name": "韭菜炒蛋",
+      "kcal": 150.0,
+      "protein": 9.0,
+      "carbs": 3.0,
+      "fat": 11.3,
+      "servingGrams": 150.0,
+      "aliases": [
+        "韭菜鸡蛋"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-075",
+      "name": "黄瓜炒蛋",
+      "kcal": 120.0,
+      "protein": 7.0,
+      "carbs": 4.0,
+      "fat": 8.4,
+      "servingGrams": 150.0,
+      "aliases": [
+        "黄瓜鸡蛋"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-076",
+      "name": "蒸蛋羹",
+      "kcal": 80.0,
+      "protein": 6.0,
+      "carbs": 1.0,
+      "fat": 5.8,
+      "servingGrams": 150.0,
+      "aliases": [
+        "水蒸蛋",
+        "鸡蛋羹"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-077",
+      "name": "卤猪肝",
+      "kcal": 150.0,
+      "protein": 23.0,
+      "carbs": 5.0,
+      "fat": 4.2,
+      "servingGrams": 80.0,
+      "aliases": [
+        "猪肝"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-078",
+      "name": "卤猪耳",
+      "kcal": 230.0,
+      "protein": 22.0,
+      "carbs": 2.0,
+      "fat": 15.0,
+      "servingGrams": 80.0,
+      "aliases": [
+        "猪耳朵"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-079",
+      "name": "叉烧",
+      "kcal": 260.0,
+      "protein": 23.0,
+      "carbs": 15.0,
+      "fat": 12.0,
+      "servingGrams": 100.0,
+      "aliases": [
+        "蜜汁叉烧",
+        "烤肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-080",
+      "name": "粉蒸肉",
+      "kcal": 300.0,
+      "protein": 15.0,
+      "carbs": 18.0,
+      "fat": 18.7,
+      "servingGrams": 100.0,
+      "aliases": [
+        "蒸肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-081",
+      "name": "糖醋排骨",
+      "kcal": 290.0,
+      "protein": 17.0,
+      "carbs": 18.0,
+      "fat": 16.7,
+      "servingGrams": 120.0,
+      "aliases": [
+        "糖醋小排"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-082",
+      "name": "海带炖排骨",
+      "kcal": 170.0,
+      "protein": 13.0,
+      "carbs": 5.0,
+      "fat": 10.9,
+      "servingGrams": 150.0,
+      "aliases": [
+        "炖排骨"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-083",
+      "name": "可乐鸡翅",
+      "kcal": 210.0,
+      "protein": 18.0,
+      "carbs": 10.0,
+      "fat": 10.9,
+      "servingGrams": 120.0,
+      "aliases": [
+        "鸡翅"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-084",
+      "name": "泡椒凤爪",
+      "kcal": 180.0,
+      "protein": 23.0,
+      "carbs": 3.0,
+      "fat": 8.4,
+      "servingGrams": 80.0,
+      "aliases": [
+        "泡椒鸡爪"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-085",
+      "name": "豉汁凤爪",
+      "kcal": 210.0,
+      "protein": 22.0,
+      "carbs": 6.0,
+      "fat": 10.9,
+      "servingGrams": 80.0,
+      "aliases": [
+        "蒸鸡爪"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-086",
+      "name": "口水鸡",
+      "kcal": 210.0,
+      "protein": 20.0,
+      "carbs": 5.0,
+      "fat": 12.2,
+      "servingGrams": 150.0,
+      "aliases": [
+        "红油鸡"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-087",
+      "name": "烧鹅",
+      "kcal": 300.0,
+      "protein": 20.0,
+      "carbs": 3.0,
+      "fat": 23.0,
+      "servingGrams": 100.0,
+      "aliases": [
+        "烤鹅"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-088",
+      "name": "白切鸡",
+      "kcal": 190.0,
+      "protein": 24.0,
+      "carbs": 0.0,
+      "fat": 10.4,
+      "servingGrams": 150.0,
+      "aliases": [
+        "白斩鸡"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-089",
+      "name": "大盘鸡",
+      "kcal": 180.0,
+      "protein": 14.0,
+      "carbs": 12.0,
+      "fat": 8.4,
+      "servingGrams": 200.0,
+      "aliases": [
+        "土豆鸡"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-090",
+      "name": "香菇蒸鸡",
+      "kcal": 150.0,
+      "protein": 18.0,
+      "carbs": 4.0,
+      "fat": 6.9,
+      "servingGrams": 150.0,
+      "aliases": [
+        "香菇鸡"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-091",
+      "name": "黄焖鸡",
+      "kcal": 190.0,
+      "protein": 18.0,
+      "carbs": 8.0,
+      "fat": 9.6,
+      "servingGrams": 200.0,
+      "aliases": [
+        "红烧鸡"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-092",
+      "name": "豉油鸡",
+      "kcal": 190.0,
+      "protein": 23.0,
+      "carbs": 4.0,
+      "fat": 9.1,
+      "servingGrams": 150.0,
+      "aliases": [
+        "酱油鸡"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-093",
+      "name": "辣子鸡",
+      "kcal": 260.0,
+      "protein": 21.0,
+      "carbs": 9.0,
+      "fat": 15.6,
+      "servingGrams": 150.0,
+      "aliases": [
+        "香辣鸡"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-094",
+      "name": "宫保鸡丁",
+      "kcal": 190.0,
+      "protein": 15.0,
+      "carbs": 13.0,
+      "fat": 8.7,
+      "servingGrams": 150.0,
+      "aliases": [
+        "宫爆鸡丁"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-095",
+      "name": "三杯鸡",
+      "kcal": 240.0,
+      "protein": 20.0,
+      "carbs": 9.0,
+      "fat": 13.8,
+      "servingGrams": 150.0,
+      "aliases": [
+        "台式三杯鸡"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-096",
+      "name": "手撕鸡",
+      "kcal": 170.0,
+      "protein": 24.0,
+      "carbs": 2.0,
+      "fat": 7.3,
+      "servingGrams": 150.0,
+      "aliases": [
+        "鸡丝"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-097",
+      "name": "炸鸡腿",
+      "kcal": 280.0,
+      "protein": 20.0,
+      "carbs": 15.0,
+      "fat": 15.6,
+      "servingGrams": 120.0,
+      "aliases": [
+        "炸鸡"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-098",
+      "name": "啤酒鸭",
+      "kcal": 220.0,
+      "protein": 18.0,
+      "carbs": 7.0,
+      "fat": 13.3,
+      "servingGrams": 150.0,
+      "aliases": [
+        "鸭肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-099",
+      "name": "爆炒腰花",
+      "kcal": 160.0,
+      "protein": 16.0,
+      "carbs": 8.0,
+      "fat": 7.1,
+      "servingGrams": 150.0,
+      "aliases": [
+        "腰花"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-100",
+      "name": "红烧肉",
+      "kcal": 380.0,
+      "protein": 13.0,
+      "carbs": 10.0,
+      "fat": 32.0,
+      "servingGrams": 100.0,
+      "aliases": [
+        "东坡肉",
+        "五花肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-101",
+      "name": "红烧牛肉",
+      "kcal": 220.0,
+      "protein": 22.0,
+      "carbs": 8.0,
+      "fat": 11.1,
+      "servingGrams": 150.0,
+      "aliases": [
+        "牛肉块"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-102",
+      "name": "酱牛肉",
+      "kcal": 190.0,
+      "protein": 29.0,
+      "carbs": 3.0,
+      "fat": 6.9,
+      "servingGrams": 100.0,
+      "aliases": [
+        "卤牛肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-103",
+      "name": "番茄牛腩",
+      "kcal": 145.0,
+      "protein": 14.0,
+      "carbs": 7.0,
+      "fat": 6.8,
+      "servingGrams": 200.0,
+      "aliases": [
+        "西红柿牛腩"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-104",
+      "name": "土豆炖牛腩",
+      "kcal": 160.0,
+      "protein": 13.0,
+      "carbs": 12.0,
+      "fat": 6.7,
+      "servingGrams": 200.0,
+      "aliases": [
+        "土豆牛肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-105",
+      "name": "杭椒牛柳",
+      "kcal": 180.0,
+      "protein": 18.0,
+      "carbs": 7.0,
+      "fat": 8.9,
+      "servingGrams": 150.0,
+      "aliases": [
+        "青椒牛柳"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-106",
+      "name": "梅菜扣肉",
+      "kcal": 350.0,
+      "protein": 14.0,
+      "carbs": 8.0,
+      "fat": 29.1,
+      "servingGrams": 100.0,
+      "aliases": [
+        "扣肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-107",
+      "name": "回锅肉",
+      "kcal": 330.0,
+      "protein": 15.0,
+      "carbs": 10.0,
+      "fat": 25.6,
+      "servingGrams": 100.0,
+      "aliases": [
+        "炒回锅肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-108",
+      "name": "猪肉炖粉条",
+      "kcal": 210.0,
+      "protein": 11.0,
+      "carbs": 17.0,
+      "fat": 10.9,
+      "servingGrams": 200.0,
+      "aliases": [
+        "粉条炖肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-109",
+      "name": "水煮肉片",
+      "kcal": 200.0,
+      "protein": 16.0,
+      "carbs": 5.0,
+      "fat": 12.9,
+      "servingGrams": 200.0,
+      "aliases": [
+        "水煮肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-110",
+      "name": "糖醋里脊",
+      "kcal": 280.0,
+      "protein": 15.0,
+      "carbs": 28.0,
+      "fat": 12.0,
+      "servingGrams": 120.0,
+      "aliases": [
+        "酸甜里脊"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-111",
+      "name": "锅包肉",
+      "kcal": 300.0,
+      "protein": 15.0,
+      "carbs": 30.0,
+      "fat": 13.3,
+      "servingGrams": 120.0,
+      "aliases": [
+        "溜肉段"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-112",
+      "name": "京酱肉丝",
+      "kcal": 220.0,
+      "protein": 19.0,
+      "carbs": 16.0,
+      "fat": 8.9,
+      "servingGrams": 150.0,
+      "aliases": [
+        "甜面酱肉丝"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-113",
+      "name": "豆角肉丝",
+      "kcal": 160.0,
+      "protein": 12.0,
+      "carbs": 9.0,
+      "fat": 8.4,
+      "servingGrams": 150.0,
+      "aliases": [
+        "肉丝豆角"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-114",
+      "name": "红烧猪蹄",
+      "kcal": 300.0,
+      "protein": 23.0,
+      "carbs": 5.0,
+      "fat": 20.9,
+      "servingGrams": 120.0,
+      "aliases": [
+        "猪蹄"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-115",
+      "name": "炒牛肚",
+      "kcal": 140.0,
+      "protein": 17.0,
+      "carbs": 5.0,
+      "fat": 5.8,
+      "servingGrams": 150.0,
+      "aliases": [
+        "牛肚",
+        "肚丝"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-116",
+      "name": "青椒肉丝",
+      "kcal": 170.0,
+      "protein": 15.0,
+      "carbs": 7.0,
+      "fat": 9.1,
+      "servingGrams": 150.0,
+      "aliases": [
+        "青椒炒肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-117",
+      "name": "鱼香肉丝",
+      "kcal": 200.0,
+      "protein": 13.0,
+      "carbs": 18.0,
+      "fat": 8.4,
+      "servingGrams": 150.0,
+      "aliases": [
+        "鱼香肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-118",
+      "name": "木须肉",
+      "kcal": 190.0,
+      "protein": 15.0,
+      "carbs": 7.0,
+      "fat": 11.3,
+      "servingGrams": 150.0,
+      "aliases": [
+        "木耳鸡蛋肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-119",
+      "name": "莴笋肉丝",
+      "kcal": 150.0,
+      "protein": 14.0,
+      "carbs": 6.0,
+      "fat": 7.8,
+      "servingGrams": 150.0,
+      "aliases": [
+        "莴笋炒肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-120",
+      "name": "蚂蚁上树",
+      "kcal": 220.0,
+      "protein": 8.0,
+      "carbs": 29.0,
+      "fat": 8.0,
+      "servingGrams": 150.0,
+      "aliases": [
+        "肉末粉丝"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-121",
+      "name": "孜然羊肉",
+      "kcal": 250.0,
+      "protein": 23.0,
+      "carbs": 6.0,
+      "fat": 14.9,
+      "servingGrams": 150.0,
+      "aliases": [
+        "炒羊肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-122",
+      "name": "羊肉串",
+      "kcal": 260.0,
+      "protein": 24.0,
+      "carbs": 3.0,
+      "fat": 16.9,
+      "servingGrams": 100.0,
+      "aliases": [
+        "烤羊肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-123",
+      "name": "葱爆羊肉",
+      "kcal": 230.0,
+      "protein": 22.0,
+      "carbs": 6.0,
+      "fat": 13.1,
+      "servingGrams": 150.0,
+      "aliases": [
+        "葱炒羊肉"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-124",
+      "name": "红烧狮子头",
+      "kcal": 260.0,
+      "protein": 16.0,
+      "carbs": 10.0,
+      "fat": 17.3,
+      "servingGrams": 120.0,
+      "aliases": [
+        "肉丸子",
+        "狮子头"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-125",
+      "name": "酸菜鱼",
+      "kcal": 130.0,
+      "protein": 14.0,
+      "carbs": 4.0,
+      "fat": 6.4,
+      "servingGrams": 200.0,
+      "aliases": [
+        "酸菜鱼片"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-126",
+      "name": "烤鱼",
+      "kcal": 180.0,
+      "protein": 20.0,
+      "carbs": 4.0,
+      "fat": 9.3,
+      "servingGrams": 200.0,
+      "aliases": [
+        "烧烤鱼"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-127",
+      "name": "糖醋鱼",
+      "kcal": 210.0,
+      "protein": 17.0,
+      "carbs": 16.0,
+      "fat": 8.7,
+      "servingGrams": 150.0,
+      "aliases": [
+        "松鼠桂鱼",
+        "松鼠鱼"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-128",
+      "name": "红烧带鱼",
+      "kcal": 210.0,
+      "protein": 20.0,
+      "carbs": 8.0,
+      "fat": 10.9,
+      "servingGrams": 150.0,
+      "aliases": [
+        "带鱼"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-129",
+      "name": "剁椒鱼头",
+      "kcal": 150.0,
+      "protein": 17.0,
+      "carbs": 3.0,
+      "fat": 7.8,
+      "servingGrams": 200.0,
+      "aliases": [
+        "鱼头"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-130",
+      "name": "水煮鱼",
+      "kcal": 180.0,
+      "protein": 16.0,
+      "carbs": 3.0,
+      "fat": 11.6,
+      "servingGrams": 200.0,
+      "aliases": [
+        "水煮鱼片"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    },
+    {
+      "id": "food-131",
+      "name": "清蒸鲈鱼",
+      "kcal": 120.0,
+      "protein": 20.0,
+      "carbs": 1.0,
+      "fat": 4.0,
+      "servingGrams": 150.0,
+      "aliases": [
+        "清蒸鱼",
+        "鲈鱼"
+      ],
+      "basis": "100g",
+      "source": "人工整理的本地参考估算；烹调和用油会改变数值",
+      "estimated": true,
+      "uncertainty": 0.3
+    }
+  ]
+}

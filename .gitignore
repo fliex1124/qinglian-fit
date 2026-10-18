@@ -1,0 +1,25 @@
+# Private runtime data and credentials
+.local/
+*.env
+*.log
+*.sqlite
+*.sqlite3
+*.db
+__pycache__/
+*.pyc
+android/signing/
+*.p12
+*.jks
+*.keystore
+# Generated build/test outputs
+android/build/
+android/.local-java-check/
+android/.native-check/
+dist/
+review-*/
+# Optional downloaded model weights
+*.safetensors
+*.safetensors.download
+*.onnx
+*.pt
+*.pth

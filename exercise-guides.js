@@ -1,0 +1,445 @@
+'use strict';
+const EXERCISE_GUIDES = {
+  "杠铃平板卧推": {
+    "status": "verified",
+    "sourceId": "Barbell_Bench_Press_-_Medium_Grip",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Barbell_Bench_Press_-_Medium_Grip/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/1.jpg",
+        "sha256": "5056475ae5def865dbe52882d30d2730142de2b03231bda304f82fd0b088f608",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Barbell_Bench_Press_-_Medium_Grip/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/0.jpg",
+        "sha256": "44ba81b3ea124f625c555ae812b37263f82ae460749bbc9ebbeb55a6309f6663",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "肩背贴稳、双脚踩实。",
+      "控制下放至胸前，再平稳推起；不要弹震。"
+    ]
+  },
+  "上斜哑铃卧推": {
+    "status": "verified",
+    "sourceId": "Incline_Dumbbell_Press",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Incline_Dumbbell_Press/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Press/0.jpg",
+        "sha256": "5128af58efedb66e5d3e2454c7a1e3c7f9353b573e97c8430e37cb638da8882e",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Incline_Dumbbell_Press/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Press/1.jpg",
+        "sha256": "7e4cd389cd0c537911da937657333f33118102e69f050c36906a6d49ae3f921f",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "肩背贴住上斜凳，双脚踩稳。",
+      "双侧平稳推起，缓慢还原，避免耸肩。"
+    ]
+  },
+  "器械夹胸（蝴蝶机）": {
+    "status": "verified",
+    "sourceId": "Butterfly",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Butterfly/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Butterfly/1.jpg",
+        "sha256": "7f471857324312b07e14f3fe73dd783d2ecd3a3ff15f9f52e9813390cda314db",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Butterfly/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Butterfly/0.jpg",
+        "sha256": "8819cc3e699ff1d0b5d18c21a411a0e380fc0f316e83d9dcaa1207617f78ea23",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "座椅调至手柄与胸部同高，背部贴垫。",
+      "双臂向前合拢，再控制打开，不甩动。"
+    ]
+  },
+  "俯卧撑": {
+    "status": "verified",
+    "sourceId": "Pushups",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Pushups/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pushups/1.jpg",
+        "sha256": "e835d50facea325828d7a3700185a0d8ba9f908db3f033334f81a6f85f774f27",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Pushups/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pushups/0.jpg",
+        "sha256": "8e6757ae0dc1d50a30f0ea67cdb330994947716a106451860cf7362bcd15f9f4",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "双手撑地，头、背、髋保持一线。",
+      "屈肘下放，再推回支撑位置，避免塌腰。"
+    ]
+  },
+  "绳索下压": {
+    "status": "verified",
+    "sourceId": "Triceps_Pushdown_-_Rope_Attachment",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Triceps_Pushdown_-_Rope_Attachment/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown_-_Rope_Attachment/0.jpg",
+        "sha256": "5761442a548a2dba5fbfa1290cab7e9c58f31439b883c94627cf66d309ed2b4b",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Triceps_Pushdown_-_Rope_Attachment/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown_-_Rope_Attachment/1.jpg",
+        "sha256": "5f40623d6913781d34216ee9d0625a6808a21c0de8cbe25de0928c84a2699ece",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "大臂靠近身体，手肘位置稳定。",
+      "向下伸肘，底部展开绳端，再缓慢还原。"
+    ]
+  },
+  "双杠臂屈伸": {
+    "status": "verified",
+    "sourceId": "Dips_-_Triceps_Version",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Dips_-_Triceps_Version/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dips_-_Triceps_Version/0.jpg",
+        "sha256": "e724b6def4bc6299c937ddfdc92081fc260a7ac4680340705de16fdd0c00c8e3",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Dips_-_Triceps_Version/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dips_-_Triceps_Version/1.jpg",
+        "sha256": "5de1f351e7dff44ca13d00c19bff082e6613725141cbe7ab38d9248e3c476f52",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "握稳双杠，保持肩部稳定。",
+      "控制屈肘下降，再推起；吃力时使用辅助。"
+    ]
+  },
+  "辅助引体向上": {
+    "status": "verified",
+    "sourceId": "Band_Assisted_Pull-Up",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Band_Assisted_Pull-Up/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Assisted_Pull-Up/0.jpg",
+        "sha256": "7af060c6c064e6e8a074add38c950dc59f93801ecd54b7d652172bd9800b034d",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Band_Assisted_Pull-Up/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Assisted_Pull-Up/1.jpg",
+        "sha256": "edc82e3a48ec624be2b920262d99399d055b96333850579b22fefa7375768a30",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "图为弹力带辅助变式，先确认辅助装置固定稳妥。",
+      "收紧躯干、肘部向下拉起，缓慢下降，避免摆动。"
+    ]
+  },
+  "坐姿划船": {
+    "status": "verified",
+    "sourceId": "Seated_Cable_Rows",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Seated_Cable_Rows/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg",
+        "sha256": "f5a4adf972f93a6c7b09e003f23005a1163653a7e36b71f1e374acab0243ddf7",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Seated_Cable_Rows/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/1.jpg",
+        "sha256": "0b8e1a0b0fff86cafff45d851ea631a20d469713e9fd735031d3fffb0299fde6",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "双脚踩稳、脊柱中立，肩部自然放松。",
+      "把手拉向腹部，控制伸臂还原，不前后甩身。"
+    ]
+  },
+  "高位下拉": {
+    "status": "verified",
+    "sourceId": "Wide-Grip_Lat_Pulldown",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Wide-Grip_Lat_Pulldown/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Lat_Pulldown/0.jpg",
+        "sha256": "929bc29751c35d0a624840b24501e74dc59438d351e66cc017e7ee8682fb3346",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Wide-Grip_Lat_Pulldown/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Lat_Pulldown/1.jpg",
+        "sha256": "781952e629e8a4cff549df94ee6b1da7e32c7cd507382d47e8566718c07807dd",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "固定大腿，挺胸坐稳。",
+      "将杠拉到胸前，再控制还原，不做颈后下拉。"
+    ]
+  },
+  "直臂下压": {
+    "status": "verified",
+    "sourceId": "Straight-Arm_Pulldown",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Straight-Arm_Pulldown/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Straight-Arm_Pulldown/0.jpg",
+        "sha256": "be0021aa99d1a00fa4536b027f9ade42f08acd3b59b384acab270bfbe6e9c294",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Straight-Arm_Pulldown/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Straight-Arm_Pulldown/1.jpg",
+        "sha256": "4ef6a19848a25f91f2089d168057e4c84b285d48d14758d16b3d8e131fbbc88c",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "站稳、躯干收紧，肘部微屈并保持。",
+      "将把手拉向大腿，再控制回到前上方。"
+    ]
+  },
+  "杠铃弯举": {
+    "status": "verified",
+    "sourceId": "Barbell_Curl",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Barbell_Curl/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/0.jpg",
+        "sha256": "eb409ec1cced4d85c91c41920e66d8b2f0e4736dee43c01eab953fdcbeace673",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Barbell_Curl/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/1.jpg",
+        "sha256": "27474187c68680520d3c6dbd3a452bb11f1e77b5474d9143517f43d02f5d8c0e",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "大臂贴近身体，手腕保持稳定。",
+      "屈肘抬起杠铃，再缓慢放下，不甩动躯干。"
+    ]
+  },
+  "站姿哑铃交替弯举": {
+    "status": "verified",
+    "sourceId": "Dumbbell_Alternate_Bicep_Curl",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Dumbbell_Alternate_Bicep_Curl/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Alternate_Bicep_Curl/0.jpg",
+        "sha256": "c5ba13ac557289b65f31ce8508b498c4455ab7b8d34f034de469c8c6e02a2838",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Dumbbell_Alternate_Bicep_Curl/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Alternate_Bicep_Curl/1.jpg",
+        "sha256": "c66302e68c51b5c9d3f8a8c198b58697c590ad61b0fa14c1153e7ecd6e79eb53",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "双脚站稳、大臂靠近身体。",
+      "左右交替弯举并转掌，控制下放；目标次数按每侧。"
+    ]
+  },
+  "坐姿哑铃推肩": {
+    "status": "verified",
+    "sourceId": "Dumbbell_Shoulder_Press",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Dumbbell_Shoulder_Press/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shoulder_Press/0.jpg",
+        "sha256": "e0a775bfa0b32b63c84f19fba2b1a05db535bde849feb3e54a3479a943b3bed6",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Dumbbell_Shoulder_Press/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shoulder_Press/1.jpg",
+        "sha256": "940d5aad6b85960e833f88e218de8ce4f806d84cf2764741f1cbff9cce365d84",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "坐稳、背部靠垫，哑铃置于肩侧。",
+      "平稳上推后缓慢下放，避免过度后仰。"
+    ]
+  },
+  "哑铃侧平举": {
+    "status": "verified",
+    "sourceId": "Side_Lateral_Raise",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Side_Lateral_Raise/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/0.jpg",
+        "sha256": "aa1982c367ea9151ee7769ac1f9f8795209db94a6eb85f7d51a7033886fb7ebc",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Side_Lateral_Raise/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/1.jpg",
+        "sha256": "9210e0fb0202c306026d45a55703aaec89b3bef7aafeb7791aa1d06adcf58ab3",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "站稳，手肘略弯，肩部放松。",
+      "向两侧抬至接近肩高，再控制下放，不借力甩动。"
+    ]
+  },
+  "俯身哑铃反向飞鸟": {
+    "status": "verified",
+    "sourceId": "Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench/0.jpg",
+        "sha256": "96474831b0193198bc920d9035596805495485e79ae9b6e68e476bedd5a24ca4",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench/1.jpg",
+        "sha256": "8bbea1e8187d0296fe3b46523e7cb8773dc2421eb19cecb609b6d03e8687b29f",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "图为额头支撑凳面的俯身变式，躯干保持稳定。",
+      "手肘微屈，将哑铃向两侧展开，再控制回落。"
+    ]
+  },
+  "绳索面拉": {
+    "status": "verified",
+    "sourceId": "Face_Pull",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Face_Pull/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg",
+        "sha256": "a184e981e8cc261a5cc1856b92d897894691d83e27929aae7e89bc9d8aa1d444",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Face_Pull/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/1.jpg",
+        "sha256": "1aeee744a027983d58328e68a258ee17ba2db85c1d16ba1bad00b4f2511dde2b",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "面向高位滑轮站稳，握住绳端。",
+      "肘部向两侧打开，绳端拉向面部两侧，再缓慢还原。"
+    ]
+  },
+  "悬垂屈膝举腿": {
+    "status": "verified",
+    "sourceId": "Hanging_Leg_Raise",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Hanging_Leg_Raise/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise/0.jpg",
+        "sha256": "c166cd61aec9cd4cd3881a17602f7a6afd80df51329ea6a143e6ffcf9bebb2af",
+        "label": "起始姿势"
+      },
+      {
+        "path": "assets/exercises/Hanging_Leg_Raise/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise/1.jpg",
+        "sha256": "c623bd4bb6848367407ddbc7c39d1611acf9c5001fe9a61360a580b78d86fa60",
+        "label": "结束姿势"
+      }
+    ],
+    "cues": [
+      "握稳横杆、肩部稳定，身体避免摆动。",
+      "屈膝向上抬起，配合收腹，再缓慢下降。"
+    ]
+  },
+  "平板支撑": {
+    "status": "verified",
+    "sourceId": "Plank",
+    "source": "https://github.com/yuhonas/free-exercise-db",
+    "review": "已核对动作、器械与照片姿势；成年人示范。非专业教练认证。",
+    "frames": [
+      {
+        "path": "assets/exercises/Plank/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg",
+        "sha256": "7f6b690f7594dfab002fb27d36f8247957171b08d19020f24208afd4d5186043",
+        "label": "标准保持姿势"
+      }
+    ],
+    "cues": [
+      "双肘位于肩下，以前臂和脚尖支撑。",
+      "头、背、髋保持一线，均匀呼吸；按时间保持。"
+    ]
+  },
+  "反向山羊挺身卷腹": {
+    "status": "verified",
+    "source": "用户此前提供的参考图",
+    "reference": true,
+    "frames": [
+      {
+        "path": "roman-chair-reference.jpg",
+        "label": "用户原参考 · 含起始与卷起两个姿势"
+      }
+    ],
+    "review": "保留原始参考图，不以背伸或其他卷腹图片替换。",
+    "cues": [
+      "按原参考器械固定脚部，身体呈斜体位、双臂抱胸。",
+      "腹部发力小幅卷起，控制还原；不要做普通背伸。"
+    ]
+  }
+};

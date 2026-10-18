@@ -1,0 +1,308 @@
+[
+  {
+    "name": "杠铃平板卧推",
+    "sourceId": "Barbell_Bench_Press_-_Medium_Grip",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Barbell_Bench_Press_-_Medium_Grip/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/0.jpg",
+        "sha256": "44ba81b3ea124f625c555ae812b37263f82ae460749bbc9ebbeb55a6309f6663"
+      },
+      {
+        "path": "assets/exercises/Barbell_Bench_Press_-_Medium_Grip/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/1.jpg",
+        "sha256": "5056475ae5def865dbe52882d30d2730142de2b03231bda304f82fd0b088f608"
+      }
+    ]
+  },
+  {
+    "name": "上斜哑铃卧推",
+    "sourceId": "Incline_Dumbbell_Press",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Incline_Dumbbell_Press/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Press/0.jpg",
+        "sha256": "5128af58efedb66e5d3e2454c7a1e3c7f9353b573e97c8430e37cb638da8882e"
+      },
+      {
+        "path": "assets/exercises/Incline_Dumbbell_Press/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Press/1.jpg",
+        "sha256": "7e4cd389cd0c537911da937657333f33118102e69f050c36906a6d49ae3f921f"
+      }
+    ]
+  },
+  {
+    "name": "器械夹胸（蝴蝶机）",
+    "sourceId": "Butterfly",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Butterfly/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Butterfly/0.jpg",
+        "sha256": "8819cc3e699ff1d0b5d18c21a411a0e380fc0f316e83d9dcaa1207617f78ea23"
+      },
+      {
+        "path": "assets/exercises/Butterfly/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Butterfly/1.jpg",
+        "sha256": "7f471857324312b07e14f3fe73dd783d2ecd3a3ff15f9f52e9813390cda314db"
+      }
+    ]
+  },
+  {
+    "name": "俯卧撑",
+    "sourceId": "Pushups",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Pushups/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pushups/0.jpg",
+        "sha256": "8e6757ae0dc1d50a30f0ea67cdb330994947716a106451860cf7362bcd15f9f4"
+      },
+      {
+        "path": "assets/exercises/Pushups/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pushups/1.jpg",
+        "sha256": "e835d50facea325828d7a3700185a0d8ba9f908db3f033334f81a6f85f774f27"
+      }
+    ]
+  },
+  {
+    "name": "绳索下压",
+    "sourceId": "Triceps_Pushdown_-_Rope_Attachment",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Triceps_Pushdown_-_Rope_Attachment/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown_-_Rope_Attachment/0.jpg",
+        "sha256": "5761442a548a2dba5fbfa1290cab7e9c58f31439b883c94627cf66d309ed2b4b"
+      },
+      {
+        "path": "assets/exercises/Triceps_Pushdown_-_Rope_Attachment/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown_-_Rope_Attachment/1.jpg",
+        "sha256": "5f40623d6913781d34216ee9d0625a6808a21c0de8cbe25de0928c84a2699ece"
+      }
+    ]
+  },
+  {
+    "name": "双杠臂屈伸",
+    "sourceId": "Dips_-_Triceps_Version",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Dips_-_Triceps_Version/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dips_-_Triceps_Version/0.jpg",
+        "sha256": "e724b6def4bc6299c937ddfdc92081fc260a7ac4680340705de16fdd0c00c8e3"
+      },
+      {
+        "path": "assets/exercises/Dips_-_Triceps_Version/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dips_-_Triceps_Version/1.jpg",
+        "sha256": "5de1f351e7dff44ca13d00c19bff082e6613725141cbe7ab38d9248e3c476f52"
+      }
+    ]
+  },
+  {
+    "name": "辅助引体向上",
+    "sourceId": "Band_Assisted_Pull-Up",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Band_Assisted_Pull-Up/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Assisted_Pull-Up/0.jpg",
+        "sha256": "7af060c6c064e6e8a074add38c950dc59f93801ecd54b7d652172bd9800b034d"
+      },
+      {
+        "path": "assets/exercises/Band_Assisted_Pull-Up/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Assisted_Pull-Up/1.jpg",
+        "sha256": "edc82e3a48ec624be2b920262d99399d055b96333850579b22fefa7375768a30"
+      }
+    ]
+  },
+  {
+    "name": "坐姿划船",
+    "sourceId": "Seated_Cable_Rows",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Seated_Cable_Rows/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg",
+        "sha256": "f5a4adf972f93a6c7b09e003f23005a1163653a7e36b71f1e374acab0243ddf7"
+      },
+      {
+        "path": "assets/exercises/Seated_Cable_Rows/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/1.jpg",
+        "sha256": "0b8e1a0b0fff86cafff45d851ea631a20d469713e9fd735031d3fffb0299fde6"
+      }
+    ]
+  },
+  {
+    "name": "高位下拉",
+    "sourceId": "Wide-Grip_Lat_Pulldown",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Wide-Grip_Lat_Pulldown/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Lat_Pulldown/0.jpg",
+        "sha256": "929bc29751c35d0a624840b24501e74dc59438d351e66cc017e7ee8682fb3346"
+      },
+      {
+        "path": "assets/exercises/Wide-Grip_Lat_Pulldown/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Lat_Pulldown/1.jpg",
+        "sha256": "781952e629e8a4cff549df94ee6b1da7e32c7cd507382d47e8566718c07807dd"
+      }
+    ]
+  },
+  {
+    "name": "直臂下压",
+    "sourceId": "Straight-Arm_Pulldown",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Straight-Arm_Pulldown/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Straight-Arm_Pulldown/0.jpg",
+        "sha256": "be0021aa99d1a00fa4536b027f9ade42f08acd3b59b384acab270bfbe6e9c294"
+      },
+      {
+        "path": "assets/exercises/Straight-Arm_Pulldown/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Straight-Arm_Pulldown/1.jpg",
+        "sha256": "4ef6a19848a25f91f2089d168057e4c84b285d48d14758d16b3d8e131fbbc88c"
+      }
+    ]
+  },
+  {
+    "name": "杠铃弯举",
+    "sourceId": "Barbell_Curl",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Barbell_Curl/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/0.jpg",
+        "sha256": "eb409ec1cced4d85c91c41920e66d8b2f0e4736dee43c01eab953fdcbeace673"
+      },
+      {
+        "path": "assets/exercises/Barbell_Curl/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/1.jpg",
+        "sha256": "27474187c68680520d3c6dbd3a452bb11f1e77b5474d9143517f43d02f5d8c0e"
+      }
+    ]
+  },
+  {
+    "name": "站姿哑铃交替弯举",
+    "sourceId": "Dumbbell_Alternate_Bicep_Curl",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Dumbbell_Alternate_Bicep_Curl/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Alternate_Bicep_Curl/0.jpg",
+        "sha256": "c5ba13ac557289b65f31ce8508b498c4455ab7b8d34f034de469c8c6e02a2838"
+      },
+      {
+        "path": "assets/exercises/Dumbbell_Alternate_Bicep_Curl/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Alternate_Bicep_Curl/1.jpg",
+        "sha256": "c66302e68c51b5c9d3f8a8c198b58697c590ad61b0fa14c1153e7ecd6e79eb53"
+      }
+    ]
+  },
+  {
+    "name": "坐姿哑铃推肩",
+    "sourceId": "Dumbbell_Shoulder_Press",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Dumbbell_Shoulder_Press/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shoulder_Press/0.jpg",
+        "sha256": "e0a775bfa0b32b63c84f19fba2b1a05db535bde849feb3e54a3479a943b3bed6"
+      },
+      {
+        "path": "assets/exercises/Dumbbell_Shoulder_Press/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shoulder_Press/1.jpg",
+        "sha256": "940d5aad6b85960e833f88e218de8ce4f806d84cf2764741f1cbff9cce365d84"
+      }
+    ]
+  },
+  {
+    "name": "哑铃侧平举",
+    "sourceId": "Side_Lateral_Raise",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Side_Lateral_Raise/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/0.jpg",
+        "sha256": "aa1982c367ea9151ee7769ac1f9f8795209db94a6eb85f7d51a7033886fb7ebc"
+      },
+      {
+        "path": "assets/exercises/Side_Lateral_Raise/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/1.jpg",
+        "sha256": "9210e0fb0202c306026d45a55703aaec89b3bef7aafeb7791aa1d06adcf58ab3"
+      }
+    ]
+  },
+  {
+    "name": "俯身哑铃反向飞鸟",
+    "sourceId": "Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench/0.jpg",
+        "sha256": "96474831b0193198bc920d9035596805495485e79ae9b6e68e476bedd5a24ca4"
+      },
+      {
+        "path": "assets/exercises/Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench/1.jpg",
+        "sha256": "8bbea1e8187d0296fe3b46523e7cb8773dc2421eb19cecb609b6d03e8687b29f"
+      }
+    ]
+  },
+  {
+    "name": "绳索面拉",
+    "sourceId": "Face_Pull",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Face_Pull/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg",
+        "sha256": "a184e981e8cc261a5cc1856b92d897894691d83e27929aae7e89bc9d8aa1d444"
+      },
+      {
+        "path": "assets/exercises/Face_Pull/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/1.jpg",
+        "sha256": "1aeee744a027983d58328e68a258ee17ba2db85c1d16ba1bad00b4f2511dde2b"
+      }
+    ]
+  },
+  {
+    "name": "悬垂屈膝举腿",
+    "sourceId": "Hanging_Leg_Raise",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Hanging_Leg_Raise/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise/0.jpg",
+        "sha256": "c166cd61aec9cd4cd3881a17602f7a6afd80df51329ea6a143e6ffcf9bebb2af"
+      },
+      {
+        "path": "assets/exercises/Hanging_Leg_Raise/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise/1.jpg",
+        "sha256": "c623bd4bb6848367407ddbc7c39d1611acf9c5001fe9a61360a580b78d86fa60"
+      }
+    ]
+  },
+  {
+    "name": "平板支撑",
+    "sourceId": "Plank",
+    "verified": false,
+    "frames": [
+      {
+        "path": "assets/exercises/Plank/0.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+        "sha256": "7a6545152b4c918a84b7e0fd2c3c7d10d571f8fbda8e4459354eb24059ff245d"
+      },
+      {
+        "path": "assets/exercises/Plank/1.jpg",
+        "url": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg",
+        "sha256": "7f6b690f7594dfab002fb27d36f8247957171b08d19020f24208afd4d5186043"
+      }
+    ]
+  }
+]
